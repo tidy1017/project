@@ -1,0 +1,166 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+
+/* 背景部分代码 */
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.bg img {
+    position: fixed;
+    z-index: -1;
+}
+
+
+/* 头部部分代码 */
+
+.header {
+    width: 100%;
+    height: 46px;
+    overflow: hidden;
+}
+
+.header .container span:first-child {
+    background-image: url("../images/logo_tlh.png");
+    /* background-size: cover; */
+    width: 180px;
+    height: 46px;
+    display: inline-block;
+}
+
+
+/* 主体部分代码，也就是登陆栏部分代码 */
+
+.main {
+    padding: 0;
+    width: 330px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: absolute;
+    top: 22%;
+    right: 18%;
+}
+
+.main .biaoti {
+    font-size: 18px;
+    text-align: left;
+    color: #333;
+    height: 42px;
+    line-height: 42px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0px 12px 0px;
+    background: #f7f7f7;
+}
+
+.main p:nth-child(2) {
+    width: 240px;
+    height: 30px;
+    border: 1px solid red;
+    margin-left: 50px;
+    /* display: block; */
+    line-height: 30px;
+    text-align: center;
+    color: red;
+}
+
+.cue {
+    display: block;
+}
+
+.main p:nth-child(3) {
+    border: 1px solid #d6d6d6;
+    width: 240px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+.main p:nth-child(3) span:nth-child(1),
+.main p:nth-child(4) span:nth-child(1) {
+    color: #d6d6d6;
+}
+
+.main p:nth-child(3) span:nth-child(3),
+.main p:nth-child(4) span:nth-child(3) {
+    color: #d6d6d6;
+}
+
+.main p:nth-child(3) span:nth-child(3):hover,
+.main p:nth-child(4) span:nth-child(3):hover {
+    color: aqua;
+}
+
+.main p:nth-child(3) input {
+    color: #222;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+    height: 20px;
+    line-height: 20px;
+    width: 200px;
+    border: none;
+}
+
+.main p:nth-child(4) {
+    border: 1px solid #d6d6d6;
+    width: 240px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.main p:nth-child(4) input {
+    color: #222;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+    height: 20px;
+    line-height: 20px;
+    width: 200px;
+    border: none;
+}
+
+.main .btn {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+    transform: translateX(-47%);
+    width: 230px;
+}
+
+.main .modal .jishi {
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    /* padding: 20px 0; */
+    font-size: 16px;
+    margin: 0;
+}

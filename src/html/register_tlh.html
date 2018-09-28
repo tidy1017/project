@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>register</title>
+    <link href="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/register.css">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="bg">
+        <img src="../images/login_bg02_tlh.jpg" alt="">
+    </div>
+    <div class="box">
+        <div class="header">
+            <div class="container">
+                <span></span>
+            </div>
+        </div>
+        <div class="main">
+            <p class="biaoti">注册系统</p>
+            <p class="" id="content" style="display: none;"></p>
+            <p class="hu">
+                <span class="glyphicon glyphicon-user ren"></span>
+                <input id="username" type="text" placeholder="用户名">
+                <span class="glyphicon glyphicon-remove-circle chuqu" style=" display: none;"></span>
+            </p>
+            <p class="mi">
+                <span class="glyphicon glyphicon-lock suo"></span>
+                <input id="pwd" type="password" placeholder="密码">
+                <span class="glyphicon glyphicon-remove-circle chuqu1" style=" display: none;"></span>
+            </p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" disabled="disabled">注册</button>
+            <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <p class="jishi">正在为您跳转到首页，请稍等:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var userna = document.getElementById("username");
+        var content = document.getElementById("content");
+        var pwd = document.getElementById("pwd");
+        var btn = document.body.querySelector(".btn");
+        var jishi = document.body.querySelector(".jishi");
+        var tId, i = 5;
+
+        userna.onkeyup = function() {
+            btn.setAttribute("disabled", "disabled");
+            console.log(3);
+            var reg = /[A-z]\w{7,15}/;
+            if (userna.value != "") {
+                console.log(4);
+                if (reg.test(userna.value)) {
+                    console.log(2);
+                    var xhr1 = new XMLHttpRequest();
+                    var url1 = "../js/sousuo_tlh.php";
+                    var data1 = "username=" + userna.value;
+                    xhr1.open("post", url1, true);
+                    xhr1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr1.send(data1);
+                    xhr1.onreadystatechange = function() {
+                        if (xhr1.readyState == 4 && xhr1.status == 200) {
+                            console.log(1);
+                            var data1 = JSON.parse(xhr1.responseText);
+                            if (data1.res) {
+                                content.innerHTML = data1.msg;
+                                content.style.display = "block";
+                            } else {
+                                content.innerHTML = data1.msg;
+                                content.style.display = "block";
+                            }
+                        }
+                    }
+                } else {
+                    content.innerHTML = "用户名格式错误";
+                    content.style.display = "block";
+                }
+            } else if (userna.value == "") {
+                content.innerHTML = "系统提示，请输入用户名或密码";
+            }
+
+        }
+        pwd.onkeyup = function() {
+            var reg1 = /\w{7,15}/;
+            if (pwd.value != "") {
+                if (reg1.test(this.value) && userna.value != "") {
+                    content.innerHTML = "密码格式正确";
+                    content.style.display = "none";
+                    btn.removeAttribute("disabled");
+                } else if (!reg1.test(this.value) && userna.value != "") {
+                    content.innerHTML = "密码格式错误,最少在七位以上";
+                    content.style.display = "block";
+                    btn.setAttribute("disabled", "disabled");
+                }
+            } else if (pwd.value == "") {
+                content.innerHTML = "系统提示，请输入用户名或密码";
+            }
+
+        }
+        btn.onclick = function() {
+            var xhr = new XMLHttpRequest();
+            var url = "../js/register.php";
+            var data = "username=" + userna.value + "&" + "pwd=" + pwd.value;
+            xhr.open("post", url, true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send(data);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // console.log(xhr.responseText);
+                    var data = JSON.parse(xhr.responseText);
+                    // console.log(data);
+                    if (data.res) {
+                        if (userna.value != "" && pwd.value != "") {
+                            content.innerHTML = data.msg;
+                            content.style.display = "block";
+                            (function(i) {
+                                tId = setInterval(function() {
+                                    jishi.innerHTML = "正在为您跳转到首页，请稍等:" + i + "秒";
+                                    i--;
+                                    if (i == 0) {
+                                        location.href = "./login_tlh.html";
+                                    }
+                                }, 1000);
+                            })(i);
+                        }
+                    } else {
+                        if (userna.value != "" && pwd.value != "") {
+                            content.innerHTML = data.msg;
+                            content.style.display = "block";
+                        } else if (userna.value == "" || pwd.value == "") {
+                            data = null;
+                            content.style.display = "block";
+                            content.innerHTML = "系统提示，请输入用户名或密码";
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="../../node_modules/_jquery@3.3.1@jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+    <link href="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="bg">
+        <img src="../images/login_bg02_tlh.jpg" alt="">
+    </div>
+    <div class="box">
+        <div class="header">
+            <div class="container">
+                <span></span>
+            </div>
+        </div>
+        <div class="main">
+            <p class="biaoti">登陆系统</p>
+            <p class="" id="content" style="display: none;"></p>
+            <!-- 用户名输入框 -->
+            <p class="hu">
+                <span class="glyphicon glyphicon-user ren"></span>
+                <input id="username" type="text" placeholder="用户名">
+                <span class="glyphicon glyphicon-remove-circle chuqu" style=" display: none;"></span>
+            </p>
+            <!-- 密码输入框 -->
+            <p class="mi">
+                <span class="glyphicon glyphicon-lock suo"></span>
+                <input id="pwd" type="password" placeholder="密码">
+                <span class="glyphicon glyphicon-remove-circle chuqu1" style=" display: none;"></span>
+            </p>
+            <!-- 登陆按键和模态框 -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">登陆</button>
+            <!-- <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <p class="jishi"></p>
+                    </div>
+                </div>
+            </div> -->
+            <!-- 跳转到注册页面 -->
+            <p class="register"><a href="./register_tlh.html">新用户注册</a></p>
+        </div>
+    </div>
+    <script>
+        var userna = document.getElementById("username");
+        var content = document.getElementById("content");
+        var pwd = document.getElementById("pwd");
+        var btn = document.body.querySelector(".btn");
+        var jishi = document.body.querySelector(".jishi");
+        // var modal = document.body.querySelector(".modal");
+        var tId, i = 5;
+
+        // 登陆按键按下时，ajax请求验证，模态框跳转
+        btn.onclick = function() {
+            var xhr1 = new XMLHttpRequest();
+            var url1 = "../js/login.php";
+            var data1 = "username=" + userna.value + "&" + "pwd=" + pwd.value;
+            xhr1.open("post", url1, true);
+            xhr1.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr1.send(data1);
+            // console.log(4);
+            xhr1.onreadystatechange = function() {
+                if (xhr1.readyState == 4 && xhr1.status == 200) {
+                    content.innerHTML = xhr1.responseText;
+                    var data1 = JSON.parse(xhr1.responseText);
+                    if (data1.res) {
+                        if (userna.value != "" && pwd.value != "") {
+                            content.innerHTML = data1.msg;
+                            content.style.display = "block";
+                            location.href = "../html/register_tlh.html";
+                            // (function(i) {
+                            //     tId = setInterval(function() {
+                            //         console.log(1);
+                            //         jishi.innerHTML = "正在为您跳转到首页，请稍等:" + i + "秒";
+                            //         i--;
+                            //         if (i == 0) {
+                            //             clearInterval(tId);
+                            //             location.href = "../html/register_tlh.html";
+                            //         }
+                            //     }, 1000);
+                            // })(i);
+                        }
+                    } else {
+                        if (userna.value != "" && pwd.value != "") {
+                            content.innerHTML = data1.msg;
+                            // modal.style.display = "none";
+                            content.style.display = "block";
+                        } else if (userna.value == "" || pwd.value == "") {
+                            data1 = null;
+                            content.style.display = "block";
+                            // modal.style.display = "none";
+                            content.innerHTML = "系统提示，请输入用户名或密码";
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="../../node_modules/_jquery@3.3.1@jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/_bootstrap@3.3.7@bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
