@@ -1,0 +1,45 @@
+@charset "utf-8";
+footer {
+    background: #3A3A3A;
+    padding: 15px 0 20px;
+}
+
+footer .container {
+    padding: 0 3%;
+}
+
+.footerweb {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+@media (min-width: 991px) {
+    footer {
+        padding: 40px 0 50px;
+    }
+    .footerweb {
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer .container {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 1199px) {
+    footer .container {
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .footerweb {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
