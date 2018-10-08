@@ -1,0 +1,769 @@
+@charset "utf-8";
+// 头部样式
+.header{
+    height: 84px;
+    background-color: yellow;
+}
+// 轮播图的媒体查询
+@media screen and (min-width: 640px){
+.banner {
+
+    .img_pc{
+        display:block!important; 
+    }
+    .img_m{
+        display: none!important;
+
+    }
+}
+
+}
+@media screen and (min-width:300px) and (max-width:639px) {
+    .banner {
+        .img_pc{
+            display:none!important;
+        }
+        .img_m{
+            display: block!important;
+        }
+    }
+    
+}
+//pc页面的媒体查询
+@media screen and (min-width: 769px) {
+  
+    .main {
+        
+        .nav{
+            // margin:0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width:770px;
+            li{
+                position: relative;
+                &:first-child a{
+                    background-color: #015198;
+                    color:white;
+                }
+                li:first-child span{
+                    color: #015198;
+                }
+                &:hover span{
+                    display:block!important;
+                }
+                span{
+                    display: inline-block;
+                    position: absolute;
+                    top:38px;
+                    left:50%;
+                    transform: translateX(-50%);
+                    color: #015198;
+                    display: none;
+                }
+                
+                a{
+                    border-left: 1px solid #CCCCCC;
+                    border-right: 1px solid #CCCCCC;
+                    border-bottom:1px solid #CCCCCC;
+                    padding:10px 28.3px;
+                    color:black;
+                    font-size: 16px;
+                    margin-right: 0;
+                    border-radius: 0;
+                  
+                    &:hover{
+                        background-color: #015198!important;
+                        color: white!important;
+                        border:none!important;
+                    }
+                }
+            }
+        }
+        // 选项卡起始位置pc
+        .tab-content{
+            blockquote{
+                margin-top:38px;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                background-color: #f2f2f2;
+                border-color: #015198;
+            h3{
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 30px;
+                margin:0;
+                color:#1a1a1a;
+            }
+        }
+            .row{
+                img{
+                 
+                    display: block;
+                    width: 100%;
+                    margin: 0 auto;
+
+                }
+                p{
+                    margin-top:22px;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                }
+                .zi1{
+                    margin-top: 0;
+                }
+                .zi2{
+                    margin-top:0;
+                    margin-bottom: 168px;
+                }
+                .energy_02{
+                    padding-left:0px;
+                    padding-right:5px ;
+                }
+                .energy_03{
+                    padding-right:0;padding-left:5px;
+                }
+                .energy_04{
+                    padding-left: 0;
+                    padding-right: 5px;
+                }
+                .energy_05{
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .energy_06{
+                    padding-left: 5px;
+                    padding-right: 0;
+                }
+            }
+
+        }
+        // 第二个选项卡pc
+        .tab-2{
+            .pai {
+                padding-top: 20px;
+                text-align: center;
+                a{
+                    padding: 14px 0!important;
+                    margin: 0 19px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #333;
+                    outline: none;
+                    font-size: 18px;
+           
+                    &:hover{
+                        border-bottom:3px solid #015198;
+                        color:#015198; 
+                    }
+                }
+                
+            }
+            .tab-content{
+                .container{
+                    margin:0 74.5px;
+                    .row{
+                        padding:33px 0;
+                        .wwpack {
+                            width: 100%;
+                            background: #f7f7f7;
+                            .wwpackimg{
+                                padding-right: 15px;
+                               
+                            }
+                            .wwpackdiv{
+                                height: 148px;
+                                overflow: hidden;
+                                a{
+                                    text-decoration: none;
+                                    color: #333;
+                                    outline: none;
+                                    h3{
+                                        padding: 6% 0 3% 0;
+                                        font-size: 18px;
+                                        margin:0;
+                                    }
+                                    p{
+                                        word-break: break-all;
+                                        line-height: 24px;
+                                        overflow: hidden;
+                                        margin-top:0;
+                                    }
+                                }
+                              
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 第三个选项卡pc
+        .tab-3{
+            .row{
+                text-align: center;
+                padding-top: 20px;
+                a{
+                    padding: 14px 0!important;
+                        margin: 0 19px;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #333;
+                        outline: none;
+                        font-size: 18px;
+                        color:#015198;
+                        border-bottom: 3px solid #015198;
+                }
+            }
+            .video{
+                padding:60px 0;
+                .video-box{
+                    width: 480px;
+                    height: 860px;
+                    margin: 0 auto;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+// 第四个选项卡pc
+        .tab-4{
+            .row{
+                &:first-child{
+                    padding: 50px 0 63px 0;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: bold;
+                    margin:10px 0 22px 0;
+                }
+                .col-md-6{
+                    &:first-child{
+                        padding:0;
+                    }
+                    &:nth-child(2){
+                        padding: 59px 128px 78px 28px;
+                    }
+                    p{
+                        margin: 0;
+                        line-height: 28px;
+                        font-weight: 400;
+                    }
+                }
+                &:nth-child(2){
+                    padding-bottom: 52px;
+                }
+            }
+        }
+        // 第五选项卡pc
+        .tab-5{
+            .tab-5-box{
+                padding:40px 0 38px 0;
+                .col-md-4{
+                    padding:0;
+                }
+    
+                .tu1,.tu2,.tu3,.tu4,.tu5,.tu6,.tu7,.tu8,.tu9,.tu10,.tu11{
+                    position: relative;
+                    box-sizing: content-box;
+                   padding:15px 0;
+                    overflow: hidden;
+                    a{
+                        display: inline-block;
+                        overflow: hidden;
+                        width: 100%;
+                        img{
+                            padding:0 13px;
+                        }
+                        .mengban{
+                            transition: all 0.3s;
+                            margin-right:13px;
+                            margin-left:13px;
+                            width:93.5%;
+                            height: 56px;
+                            line-height: 56px;
+                            position: absolute;
+                            bottom:20px;
+                            left:13px;
+                            background-color:rgba(0,0,0,0.5);
+                            text-align: center;
+                            font-size: 17px;
+                            margin:0;
+                            span{
+                                color:white;
+                            }
+                        }
+                        &:hover .mengban{
+                            height: 88.5%;
+                            // line-height: 100%;
+                        }
+                        &:hover .mochang{
+                            vertical-align: middle;
+                            position: absolute;
+                            top:40%;
+                            left:50%;
+                            transform: translateX(-50%);
+                        }
+
+                        .modal{
+                            .modal-lg{
+                                width: 700px;
+                              height: 507px;
+                            }
+                            .modal-dialog{
+                                margin:80px auto;
+                            }
+                            .modal-content{
+                                .bigimgovflow{
+                                    position: relative;
+                                    background: #fff;
+                                    padding:11px 0;
+                                    .cha{
+                                        position: absolute;
+                                        top:-15px;
+                                        right:-15px!important;
+                                        color:red;
+                                        font-size: 30px;
+                                        z-index: 44;
+                                        }
+                                }
+                                .bigimgfloat{
+                                    position: relative;
+                                    overflow: hidden;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            } 
+        }
+// 第六个选项卡pc
+        .tab-6{
+            .tab-6-1{
+                padding-top:40px!important;
+                .col-md-6{
+                 
+                    a{
+                        width: 100%;
+                        background-color: #CCCCCC;
+                        display: inline-block;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 18px;
+                        text-align: center;
+                        text-decoration: none;
+                        color:black;
+                        &:hover{
+                            color:white;
+                            background-color: #015198;
+                        }
+                    }
+                } 
+            }
+            .row{
+                padding: 10px 0 10px 0;
+                .img-box{
+                    padding:0;
+                    // margin:0 15px;
+                }
+                    .col-md-6{
+                        padding: 0;
+                        .col-img{
+                            padding:0;
+                        }
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 18px;
+                            text-align: center;
+                            background-color: #e6e6e6;
+                            text-decoration: none;
+                            color:black;
+                            &:hover{
+                                background-color: #015198;
+                                color: white;
+                            }
+                        }
+                      
+                              
+                        .col-md-3{
+                            background-color: #e6e6e6;
+                        }
+                        .czjd{
+                            h3{
+                                color:#015198;
+                            }
+                            p{
+                                
+                                margin-top:10.8px;
+                                .glyphicon{
+                                display: inline-block;
+                                padding-right: 10px;
+                                color: black; 
+                            }
+                        }
+                    }            
+                }
+            }
+        }
+    }
+   
+}
+// 移动媒体查询
+@media screen and (min-width:300px) and (max-width:768px) {
+    .main{
+        .container-fluid{
+            padding:0;
+        }
+        .ka{
+            display: none;
+        }
+        // 选项卡起始位置mobile
+        .tab-content{
+            blockquote{
+                margin-top:20px;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                background-color: #f2f2f2;
+                border-color: #015198;
+                padding-top:5px;
+                padding-bottom:5px;
+                h3{
+                    font-size: 17px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    margin:0;
+                    color:#1a1a1a;
+                }
+            }
+        .row{
+            .zi{
+                padding-top:22px;
+            }
+            .energy_02{
+               padding:10px 0; 
+            }
+            .energy_03{
+                padding:10px 0; 
+            }
+            .energy_04{
+                padding:10px 0; 
+            }
+            .energy_05{
+                padding:10px 0; 
+            }
+            .energy_06{
+                padding:10px 0; 
+            }
+            img{
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+        }  
+        }
+        // 第二选项卡mobile
+      .tab-2{
+       
+          .pai{
+                padding-top: 20px;
+                text-align: center;
+                a{
+                    padding: 14px 2%!important;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #333;
+                    outline: none;
+                    font-size: 16px;
+                
+                    &:hover{
+                        border-bottom:3px solid #015198;
+                        color:#015198; 
+                    }
+                }
+            }
+          .tab-content{
+            .container{
+                // margin:0 74.5px;
+                .row{
+                    padding:33px 0;
+                    .wwpack {
+                        width: 100%;
+                        background: #f7f7f7;
+                        margin-bottom: 20px;
+                        .wwpackimg{
+                            padding-right: 15px;
+                           
+                        }
+                        .wwpackdiv{
+                            height: 148px;
+                            overflow: hidden;
+                            a{
+                                text-decoration: none;
+                                color: #333;
+                                outline: none;
+                                h3{
+                                    padding: 6% 0 3% 0;
+                                    font-size: 18px;
+                                    margin:0;
+                                }
+                                p{
+                                    word-break: break-all;
+                                    line-height: 24px;
+                                    overflow: hidden;
+                                    margin-top:0;
+                                }
+                            }
+                          
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+        // 第三选项卡mobile
+    .tab-3{
+        .row{
+            text-align: center;
+            padding-top: 20px;
+            margin:0;
+            a{
+                padding: 14px 0!important;
+                margin: 0 19px;
+                display: inline-block;
+                text-decoration: none;
+                color: #333;
+                outline: none;
+                font-size: 18px;
+                color:#015198;
+                border-bottom: 3px solid #015198;
+            } 
+        }
+        .video{
+            padding-left: 3%;
+            padding-right: 3%;
+            
+        }
+    }
+        // 第四选项卡mobile
+    .tab-4{
+        .row{
+            &:first-child{
+                padding: 20px 0;
+            }
+            p{
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: bold;
+                margin:10px 0 22px 0;
+            }
+            .col-md-6{
+                p{
+                    margin: 0;
+                    line-height: 28px;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+            &:nth-child(2){
+                padding-bottom: 52px;
+            }
+        }
+    }
+    //第五选型卡mobile
+    .tab-5{
+        .tab-5-box{
+            padding:40px 0 38px 0;
+            .col-md-4{
+                padding:0;
+            }
+
+            .tu1,.tu2,.tu3,.tu4,.tu5,.tu6,.tu7,.tu8,.tu9,.tu10,.tu11{
+                position: relative;
+                box-sizing: content-box;
+               padding:15px 0;
+                overflow: hidden;
+                a{
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 100%;
+                    img{
+                        padding:0 13px;
+                    }
+                    .mengban{
+                        transition: all 0.3s;
+                        margin-right:13px;
+                        margin-left:13px;
+                        width:93.5%;
+                        height: 56px;
+                        line-height: 56px;
+                        position: absolute;
+                        bottom:19px;
+                        left:13px;
+                        background-color:rgba(0,0,0,0.5);
+                        text-align: center;
+                        font-size: 16px;
+                        margin:0;
+                        span{
+                            color:white;
+                        }
+                    }
+                    &:hover .mengban{
+                        height: 89%;
+                    }
+                    &:hover .mochang{
+                        vertical-align: middle;
+                        position: absolute;
+                        top:40%;
+                        left:50%;
+                        transform: translateX(-50%);
+                    }
+
+                    .modal{
+                        .modal-lg{
+                        width: 90%;
+                        }
+                        .modal-dialog{
+                            margin:220px auto;
+                        }
+                        .modal-content{
+                            .bigimgovflow{
+                                position: relative;
+                                background: #fff;
+                                padding:11px 0;
+                                .cha{
+                                    position: absolute;
+                                    top:-13px;
+                                    right:-13px;
+                                    color:red;
+                                    font-size: 30px; 
+                                    }
+                            }
+                            .bigimgfloat{
+                                position: relative;
+                                overflow: hidden;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        } 
+    }
+    // 第六选项卡mobile
+    .tab-6{
+        .container{
+            padding:30px 10px 38px 10px;
+            .row{
+                .czjd{
+                  
+                    h3{
+                        color:#015198!important;
+                    }
+                    p{
+                        .glyphicon{
+                            color:#CCCCCC;
+                        }
+                    }
+                }
+            }
+            .tab-6-1{
+                display: none;
+            }
+        }
+        
+    }
+   
+}
+    .main{
+        position: relative;
+        .nav{
+          padding-left: 50%!important;
+        }
+    }
+}
+// 为了解决第三选项卡的移动端问题所作的媒体查询
+@media screen and (min-width:380px)and (max-width:639px) {
+    .main{
+        .tab-3{
+            .row{
+                text-align: center;
+                padding-top: 20px;
+                margin:0;
+                a{
+                    padding: 14px 0!important;
+                    margin: 0 19px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #333;
+                    outline: none;
+                    font-size: 18px;
+                    color:#015198;
+                    border-bottom: 3px solid #015198;
+                } 
+            }
+            .video{
+                padding-left: 3%;
+                padding-right: 3%;
+                .video-box{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+.banner .carousel-indicators{
+    bottom: 0px;
+}
+.banner .carousel-indicators{
+    bottom: -10px;
+}
+.video-box{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+body{
+    position: relative;
+}
+// 返回顶部
+.aside{
+    // display: none;
+    position: fixed;
+    right: 0;
+    top:88%;
+    width: 54px;
+    height: 54px;
+    background-color: black;
+    a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    span{
+        display: block;
+        &:nth-child(1){
+            line-height: 30px;
+            color:white;
+        }
+        &::nth-child(2){
+            left: 34px;
+            font-size: 18px;
+            color:white;
+        }
+    }
+    }
+}

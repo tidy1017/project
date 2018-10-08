@@ -1,0 +1,847 @@
+@charset "utf-8";
+
+// 轮播图的媒体查询
+@media screen and (min-width: 640px) {
+    .banner {
+        .img_pc {
+            display: block!important;
+        }
+        .img_m {
+            display: none!important;
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:639px) {
+    .banner {
+        .img_pc {
+            display: none!important;
+        }
+        .img_m {
+            display: block!important;
+        }
+    }
+}
+//pc页面的媒体查询
+@media screen and (min-width: 769px) {
+.main{
+    .nav{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width:800px;
+        li{
+            position: relative;
+            &:first-child a{
+                background-color: #015198;
+                color:white;
+            }
+            li:first-child span{
+                color: #015198;
+            }
+            &:hover span{
+                display:block!important;
+            }
+            span{
+                display: inline-block;
+                position: absolute;
+                top:38px;
+                left:50%;
+                transform: translateX(-50%);
+                color: #015198;
+                display: none;
+            }
+            
+            a{
+                border-left: 1px solid #CCCCCC;
+                border-right: 1px solid #CCCCCC;
+                border-bottom:1px solid #CCCCCC;
+                padding:10px 28.3px;
+                color:black;
+                font-size: 16px;
+                margin-right: 0;
+                border-radius: 0;
+              
+                &:hover{
+                    background-color: #015198!important;
+                    color: white!important;
+                    border:none!important;
+                }
+            }
+        }
+    }
+    // 选项卡pc
+    .tab-content{
+        .tab-1{
+            blockquote{
+                margin-top:38px;
+                padding-left: 15px;
+                margin-bottom: 10px;
+                background-color: #f2f2f2;
+                border-color: #015198;
+            h3{
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 30px;
+                margin:0;
+                color:#1a1a1a;
+                span{
+                    font-size: 18px;
+                    padding-top: 12px;
+                    line-height: 18px;
+                    font-weight: normal;
+                }
+            }
+            }
+            p{
+                line-height: 24px;
+            }  
+            .row{
+                
+                padding-bottom: 30px;
+                .zi1{
+                    padding: 20px 40px 0!important;
+                    line-height: 24px;
+                    font-size: 13px;
+                }
+                .col-md-6{
+                    padding-right: 0px;
+                    .tu1{
+                        padding-right: 8px;
+                        padding-left: 0;
+                        padding-bottom: 8px;
+                    }
+                }
+                .big-img{
+                    padding-left: 0;
+                    img{
+                        width: 94%;
+                    }
+                }
+            }
+            .tuTotal{
+                padding-bottom: 60px;
+            }
+            .lianjie{
+                color: #015198;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .bg{
+                background-color: #f7f7f7;
+                h4{
+                    a{
+                        color:black;
+                        text-decoration: none;
+                    }
+                }
+                .anniu{
+                    text-decoration: none;
+                    margin-top: 14px;
+                    display:inline-block;
+                    font-size: 13px;
+                    color: #fff;
+                    background: #015198;
+                    padding: 7px 15px;
+                }
+            }
+        }
+        // pc端选项卡2
+        .tab-2{
+            .tab-2-tu{
+                padding:60px 0;
+            }
+        }
+        //pc端选项卡3
+        .tab-3{
+            .pai{
+                padding-top: 20px;
+                text-align: center;
+                a{
+                    padding: 14px 2%!important;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #333;
+                    outline: none;
+                    font-size: 16px;
+                
+                    &:hover{
+                        border-bottom:3px solid #015198;
+                        color:#015198; 
+                    }
+                }
+            }
+            .tab-3-1{
+                .pi1{
+                    padding:37px 0 40px 0!important;
+                    border-bottom: 1px solid #e6e6e6;
+                }
+                .pi2{
+                    padding: 30px 0 30px 0;
+                    border-bottom: 1px solid #e6e6e6;
+                    margin-bottom: 50px;
+                }
+                .pi3{
+                    margin-bottom: 100px;
+                    padding-bottom: 20px;
+                }
+                p{
+                    line-height: 24px;
+                }
+            }
+        }
+        //pc端选项卡4
+        .tab-4{
+            .pai1{
+                padding-top: 20px;
+                text-align: center;
+                a{
+                    padding: 14px 0;
+                    display: inline-block;
+                    width: 300px;
+                    text-decoration: none;
+                    background-color: #f3f3f3;
+                    color: #333;
+                    font-size: 16px;
+                }
+            }
+            .tab-content{
+                .row{
+                    padding:38px 0;
+                }
+                .col-md-6{
+                    padding-left: 70px;
+                    padding-bottom: 10px;
+                    .col-sm-5{
+                        padding-left: 0px;
+                    }
+                    .wwpack{
+                        width: 100%;
+                        background: #f7f7f7;
+                        height: 170px;
+                        .wwpackimg{
+                            padding-right: 15px;
+                            .modal{
+                                .modal-lg{
+                                    width: 700px;
+                                  height: 507px;
+                                }
+                                .modal-dialog{
+                                    margin:80px auto;
+                                }
+                                .modal-content{
+                                    .bigimgovflow{
+                                        position: relative;
+                                        background: #fff;
+                                        padding:11px 0;
+                                        .cha{
+                                            position: absolute;
+                                            top:-15px;
+                                            right:-15px;
+                                            color:red;
+                                            font-size: 30px;
+                                            }
+                                        }
+                                    }
+                                    .bigimgfloat{
+                                        position: relative;
+                                        overflow: hidden;
+                                        margin: 0 auto;
+                                        
+                                    }
+                                }
+                            }
+                            img{
+                                cursor: pointer;
+                            }
+                            .wwpackdiv{
+                                height: 148px;
+                                overflow: hidden;
+                                line-height: 24px;
+                                p{
+                                    margin:0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+          // pc端选项卡5
+          .tab-5{
+            .smallbox{
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 36px;
+                text-align: center;
+                background-color: #f3f3f3;
+                h3{
+                    color:#006699;
+                    padding: 13px 0;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 20px;
+                }
+            } 
+
+          }
+          //pc端选项卡6
+          .tab-6{
+              .box{
+                  width: 100%;
+                  height: 80px;
+                  overflow: hidden;
+                  position: relative;
+                .left{
+                    span{
+                        line-height: 50px;
+                        cursor: pointer;
+                    }
+                    text-align: center;
+                    float:left;
+                    width: 35px;
+                    height: 50px;
+                    border:1px solid #DADADA;
+                    border-radius: 4px;
+                    margin-top: 20px;
+                    background-color: white;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    cursor: pointer;
+                    z-index: 2;
+                    &:hover{
+                        color:white;
+                        background-color: #015198;
+                    }
+                }
+                .right{
+                    span{
+                      
+                        line-height: 50px;
+                        cursor: pointer;
+                    }
+                    text-align: center;
+                    border:1px solid #DADADA;
+                    border-radius: 4px;
+                    float: left;
+                    width: 35px;
+                    height: 50px;
+                    margin-top: 20px;
+                    background-color: white;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                    cursor: pointer;
+                    z-index:2;
+                    &:hover{
+                        color:white;
+                        background-color: #015198;
+                    }
+                }
+                 ul{
+                     width: 1500px;
+                     height: 70px;
+                     position: absolute;
+                     li{
+                       padding:20px 5px;
+                       list-style: none;
+                       float:left;
+                       width: 212px;
+                         a{
+                           display: inline-block;
+                           width: 100%;
+                           height: 50px;
+                           text-align: center;
+                           line-height: 50px;
+                           text-decoration: none;
+                           font-size: 16px;
+                           &:hover{
+                               color:white!important;
+                               background-color: #015198!important;
+                           }
+                        }
+                        .show{
+                            color:white!important;
+                            background-color: #015198!important;
+                        }
+                    }
+                }
+              
+            }
+            .row{
+                padding: 10px 0 10px 0;
+                .img-box{
+                    padding:0;
+                }
+                    .col-md-6{
+                        padding: 0;
+                        .col-img{
+                            padding:0;
+                            .center-block{
+                                margin-left: 0;
+                                margin-right: 0;
+                            }
+                        }
+                        a{
+                            display: block;
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            font-size: 18px;
+                            text-align: center;
+                            background-color: #e6e6e6;
+                            text-decoration: none;
+                            color:black;
+                            &:hover{
+                                background-color: #015198;
+                                color: white;
+                            }
+                        }
+                      
+                              
+                        .col-md-3{
+                            background-color: #e6e6e6;
+                        }
+                        .czjd{
+                            h3{
+                                color:#015198;
+                            }
+                            p{
+                                margin-top:10.8px;
+                                .glyphicon{
+                                display: inline-block;
+                                padding-right: 10px;
+                                color:gray; 
+                                
+                            }
+                        }
+                    }            
+                }
+            }
+        }
+    }
+}
+
+
+// 移动媒体查询
+@media screen and (min-width:300px) and (max-width:768px) {
+    .main{
+        .container-fluid{
+            padding:0;
+        }
+        .ka{
+            display: none;
+        }
+        .tab-content{
+            // 移动端选项卡1
+            .tab-1{
+                blockquote{
+                    margin-top:38px;
+                    padding-left: 15px;
+                    margin-bottom: 10px;
+                    background-color: #f2f2f2;
+                    border-color: #015198;
+                h3{
+                    font-size: 17px;
+                    font-weight: bold;
+                    line-height: 30px;
+                    margin:0;
+                    color:#1a1a1a;
+                    span{
+                        display: block;
+                        font-size: 15px;
+                        // padding-top: 12px;
+                        line-height: 18px;
+                        font-weight: normal;
+                    }
+                }
+                }
+                .tu1{
+                    padding-right: 0;
+                    padding-left: 8px;
+                    padding-bottom: 8px;
+                }
+                .lianjie{
+                    color: #015198;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 12px 0;
+                }
+                .bg{
+                    background-color: #f7f7f7;
+                    h4{
+                        a{
+                            color:black;
+                            text-decoration: none;
+                        }
+                    }
+                    .anniu{
+                        text-decoration: none;
+                        margin-top: 14px;
+                        display:inline-block;
+                        font-size: 13px;
+                        color: #fff;
+                        background: #015198;
+                        padding: 7px 15px;
+                    }
+                }
+            }
+             // mobile端选项卡2
+        .tab-2{
+            .tab-2-tu{
+                padding:20px 3%;
+            }
+        }
+        //mobile端选项卡3
+        .tab-3{
+            .pai{
+                padding-top: 20px;
+                text-align: center;
+                a{
+                    padding: 14px 2%!important;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #333;
+                    outline: none;
+                    font-size: 16px;
+                
+                    &:hover{
+                        border-bottom:3px solid #015198;
+                        color:#015198; 
+                    }
+                }
+                
+            }
+            .tab-content{
+                h3{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        //mobile端选项卡4
+        .tab-4{
+            .pai1{
+                display: none;
+               
+            }
+            .tab-content{
+                .container-fluid{
+                    padding:0 20px;
+                }
+                .row{
+                    padding:38px 0;
+                }
+                .col-md-6{
+                    margin-bottom: 10px;
+                    .wwpack{
+                        width: 100%;
+                        background: #f7f7f7;
+                        height: auto;
+                        overflow: hidden;
+                        .wwpackimg{
+                            padding-right: 0;
+                            padding-left: 0;
+                            .modal{
+                                .modal-lg{
+                                width: 90%;
+                                }
+                                .modal-dialog{
+                                    margin:220px auto;
+                                }
+                                .modal-content{
+                                    .bigimgovflow{
+                                        position: relative;
+                                        background: #fff;
+                                        padding:11px;
+                                              .cha{
+                                            position: absolute;
+                                            top:-13px;
+                                            right:-13px;
+                                            color:red;
+                                            font-size: 30px; 
+                                            }
+                                        }
+                                    }
+                                    .bigimgfloat{
+                                        position: relative;
+                                        overflow: hidden;
+                                        margin: 0 auto;
+                                  
+                                    }
+                                }
+                            }
+                            .wwpackdiv{
+                                overflow: hidden;
+                                line-height: 24px;
+                                img{
+                                    cursor: pointer;
+                                }
+                                p{
+                                    margin:0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //mobile端选项卡5
+        .tab-5{
+            .smallbox{
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 36px;
+                text-align: center;
+                background-color: #f3f3f3;
+                h3{
+                    color:#006699;
+                    padding: 13px 0;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 24px;
+                    padding-bottom: 20px;
+                }
+            } 
+
+          }
+        }
+        //mobile端选项卡6
+        .tab-6{
+            .box{
+                width: 100%;
+                height: 80px;
+                overflow: hidden;
+                position: relative;
+                // margin-top: 40px;
+              .left{
+                  span{
+                      line-height: 50px;
+                      cursor: pointer;
+                  }
+                  text-align: center;
+                  float:left;
+                  width: 35px;
+                  height: 50px;
+                  border:1px solid #DADADA;
+                  border-radius: 4px;
+                  margin-top: 20px;
+                  background-color: white;
+                  position: absolute;
+                  top:0;
+                  left: 0;
+                  cursor: pointer;
+                  z-index: 2;
+                  &:hover{
+                      color:white;
+                      background-color: #015198;
+                  }
+              }
+              .right{
+                  span{
+                    
+                      line-height: 50px;
+                      cursor: pointer;
+                  }
+                  text-align: center;
+                  border:1px solid #DADADA;
+                  border-radius: 4px;
+                  float: left;
+                  width: 35px;
+                  height: 50px;
+                  margin-top: 20px;
+                  background-color: white;
+                  position: absolute;
+                  top:0;
+                  right: 0;
+                  cursor: pointer;
+                  z-index:2;
+                  &:hover{
+                      color:white;
+                      background-color: #015198;
+                  }
+              }
+               ul{
+                   width: 2500px;
+                   height: 70px;
+                   position: absolute;
+                  //  transition: all .4s;
+                  left:0;
+                   li{
+                     padding:20px 5px;
+                     list-style: none;
+                     float:left;
+                     width: 260px;
+                       a{
+                         display: inline-block;
+                         width:100%;
+                         height: 50px;
+                         text-align: center;
+                         line-height: 50px;
+                         text-decoration: none;
+                         font-size: 16px;
+                         &:hover{
+                             color:white!important;
+                             background-color: #015198!important;
+                         }
+                      }
+                  }
+              }
+          }
+          .container{
+            padding:0 10px 38px 10px;
+            .row{
+                img{
+                    width: 100%;
+                }
+                .czjd{
+                  
+                    h3{
+                        color:#015198!important;
+                    }
+                    p{
+                        .glyphicon{
+                            color:#CCCCCC;
+                        }
+                    }
+                }
+            }
+            .tab-4-1{
+                display: none;
+            }
+        }
+      }
+    }
+
+@media screen and (min-width:411px)and (max-width:414px){
+    .main{
+        .tab-6{
+            .box{
+                li{
+                    width: 315px!important;
+                }
+            }
+        }
+    }
+}
+@media screen and (width:320px){
+    .main{
+        .tab-6{
+            .box{
+                li{
+                    width: 225px!important;
+                }
+            }
+        }
+    }
+}
+@media screen and (width:375px){
+    .main{
+        .tab-6{
+            .box{
+                li{
+                    width: 278px!important;
+                }
+            }
+        }
+    }
+}
+@media screen and (width:1024px){
+    .main{
+        .tab-6{
+            .box{
+                li{
+                    width: 173px!important;
+                }
+            }
+        }
+    }
+}
+@media screen and (width:768px){
+    .main{
+        .tab-6{
+            .box{
+                li{
+                    width: 218px!important;
+                }
+            }
+        }
+    }
+}
+
+// .tab-4问题
+@media screen and (width:1024px){
+    .main{
+        .tab-4{
+           .pai1{
+               a{
+                   width: 250px!important;
+               }
+           }
+       
+        .tab-content{
+            .col-md-6{
+                padding-left: 30px!important;
+                .col-sm-7{
+                    padding-right: 0!important;
+                }
+                .wwpack{
+                    height: 150px!important;
+                    .wwpackimg{
+                        .wwpackdiv{
+                            p{
+                                width: 265px!important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+}
+// 公共样式
+body{
+    position: relative;
+}
+.banner .carousel-indicators{
+    bottom: 0px;
+}
+.banner .active{
+    background-color: #015198;
+    border-color: #015198;
+}
+// 返回顶部
+.aside{
+    position: fixed;
+    right: 0;
+    top:88%;
+    width: 54px;
+    height: 54px;
+    background-color: black;
+    a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color:white;
+    text-decoration: none;
+    span{
+        display: block;
+        &:nth-child(1){
+            line-height: 30px;
+            color:white;
+        }
+        &::nth-child(2){
+            left: 34px;
+            font-size: 18px;
+            color:white;
+        }
+    }
+    }
+}
