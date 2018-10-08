@@ -3,7 +3,7 @@ $(function($) {
     var he = $(window).height();
     var top = $(".bg img").offset().top;
     var left = $(".bg img").offset().left;
-
+    var tId, i = 5;
 
     $(".bg img").css({
         'width': "" + wi + "px",
@@ -32,6 +32,8 @@ $(function($) {
     });
     $(".main .hu .chuqu").on("click", function() {
         $("#username").val("");
+        $(".main .hu .chuqu").css("display", "none");
+        $("#content").html("系统提示，请输入用户名或密码");
         console.log(1);
     });
     $("#pwd").on("click", function() {
@@ -55,6 +57,105 @@ $(function($) {
     });
     $(".main .mi .chuqu1").on("click", function() {
         $("#pwd").val("");
+        $(".main .mi .chuqu1").css("display", "none");
+        $("#content").html("系统提示，请输入用户名或密码");
         console.log(1);
     });
+    // ajax对于用户名实时验证
+    $("#username").on("keyup", function() {
+        $(".btn").css("disabled", "disabled");
+        var reg = /[A-z]\w{7,15}/;
+        if ($("#username").val() != "") {
+            if (reg.test($("#username").val())) {
+                var data = {
+                    "username": $('#username').val()
+                };
+                // var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/login.php";
+                var url = "../js/sousuo_tlh.php"
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: data,
+                    dataType: "json",
+                    success: function(data) {
+                        if (data.res) {
+                            $("#content").html(data.msg);
+                            $("#content").css("display", "block");
+                        } else {
+                            $("#content").html(data.msg);
+                            $("#content").css("display", "block");
+                        }
+                    }
+                });
+            } else {
+                $("#content").html("用户名格式错误");
+                $("#content").css("display", "block");
+            }
+        } else if ($("#username").val() == "") {
+            $("#content").html("系统提示，请输入用户名或密码");
+        }
+    });
+    // 密码框的验证
+    $("#pwd").on("keyup", function() {
+        var reg1 = /\w{7,15}/;
+        if ($("#pwd").val() != "") {
+            if (reg1.test(this.value) && $("username").val != "") {
+                $("#content").html("密码格式正确");
+                $("#content").css("display", "block");
+                $(".btn").removeAttr("disabled");
+            } else if (!reg1.test(this.value) && $("#username") != "") {
+                $("#content").html("密码格式错误,最少在七位以上");
+                $("#content").css("display", "block");
+                $(".btn").attr("disabled", "disabled");
+            }
+        } else if ($("#pwd").val() == "") {
+            $("#content").html("系统提示，请输入用户名或密码");
+        }
+    });
+    // 登陆按键按下时，ajax请求验证
+    $(".btn").on("click", function() {
+        console.log(1);
+        var data = {
+            "username": $('#username').val(),
+            "pwd": $('#pwd').val()
+        };
+        // var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/login.php";
+        var url = "../js/register.php"
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: data,
+            dataType: "json",
+            success: function(data1) {
+                if (data1.res) {
+                    if ($("#username").val() != "" && $("#pwd").val() != "") {
+                        $("#content").html(data1.msg);
+                        $("#username").val("");
+                        $("#pwd").val("");
+                        $("#content").css("display", "block");
+                        (function(i) {
+                            tId = setInterval(function() {
+                                // jishi.innerHTML = "正在为您跳转到首页，请稍等:" + i + "秒";
+                                $(".jishi").html("正在为您跳转到首页，请稍等:" + i + "秒");
+                                i--;
+                                if (i == 0) {
+                                    location.href = "./login_tlh.html";
+                                }
+                            }, 1000);
+                        })(i);
+                    }
+                } else {
+                    if ($("#username").val != "" && $("pwd").val() != "") {
+                        $("#content").html(data1.msg);
+                        $("#content").css("display", "block");
+                    } else if ($("#username").val() == "" || $("#pwd").val() == "") {
+                        data1 = null;
+                        $("#content").css("display", "block");
+                        $("#content").html("系统提示，请输入用户名或密码");
+                    }
+                }
+            }
+        });
+    });
+
 });
