@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>人力资源</title>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/commen_nlf.css">
+    <link rel="stylesheet" href="../styles/resource_nlf.css">
+    <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header"></div>
+
+
+    <!-- banner -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../images/images_nlf/resource_banner.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="../images/images_nlf/resource_banner.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- tabs -->
+    <div class="tabs hidden-sm hidden-xs">
+        <div class="container">
+            <a href="resources_nlf.html" class="cur">人才理念</a>
+            <a href="http://www.szselen.com/resources/Employee/Nfamily/melon/index.html">员工活动</a>
+            <a href="http://www.szselen.com/resources/job/index.html">加入新纶</a>
+        </div>
+    </div>
+
+
+
+    <!-- web -->
+    <div class="web">
+        <div class="web_detail">
+            <h3>人才理念</h3>
+            <p>新纶科技始终坚持以人为本的人才发展理念，视人才为公司发展的核心竞争力，以人力资本为公司发展的首要资本。</p>
+            <h3>人才政策</h3>
+            <p>以雇主品牌吸引人才，以严格标准选拔人才；以胜任素质培养人才，以职业规划发展人才；以科学机制激励人才，以文化关怀凝人才。</p>
+        </div>
+    </div>
+
+
+
+    <!-- resources -->
+    <div class="resources">
+        <ul>
+            <li>
+                <div class="web">
+                    <div class="resources_left">
+                        <img src="../images/images_nlf/resource_img1.png" alt="">
+                    </div>
+                    <div class="resources_right">
+                        <h3>职业发展</h3>
+                        <p>公司按照职位价值贡献的方式将职位划分为不同的序列，为各序列规划了管理和专业技术类两类职业发展通道，从事专业技术类职位与管理类职位的员工具有同等的发展空间和机遇。公司鼓励员工在同一职位上不断的提升专业技术和管理能力，获得纵向的岗位晋升员工也可以在管理与专业通道之间横向流动，使不同层次、不同职位的员工均可根据自身能力素质和公司工作需要进行职业规划，让自身潜能得到充分挖掘，才华得到充分发挥，为员工搭建实现人生价值的平台，实现公司与员工共同成长与发展。</p>
+                    </div>
+                </div>
+            </li>
+            <li class="resources_even">
+                <div class="web">
+                    <div class="resources_left">
+                        <img src="../images/images_nlf/resource_img2.png" alt="">
+                    </div>
+                    <div class="resources_right">
+                        <h3>薪酬福利</h3>
+                        <p>公司薪酬福利体系的建立着眼于新纶科技未来长期战略发展薪酬水平定位于国内高科技制造行业的市场较高水平，公司通过建立合理的薪酬结构、规范的薪资标准与动态薪酬调整机制，确保薪酬的外部竞争性与内部公平性。同时，公司重视人文关怀，建立了完善的福利制度，不但为员工提供国家法定福利，并且结合公司实际情况，制定并实施个性化的福利政策，以鼓励员工长期为新纶服务。</p>
+                    </div>
+                </div>
+            </li>
+            <li class="resources_even">
+                <div class="web">
+                    <div class="resources_left">
+                        <img src="../images/images_nlf/resource_img3.png" alt="">
+                    </div>
+                    <div class="resources_right">
+                        <h3>培训开发</h3>
+                        <p>公司注重人才培养，始终把人才视为公司最宝贵的财富。公司以新纶学院为依托，着力构建基于胜任素质模型的培训课程体系。公司通过安排各类培训、岗位轮换、在岗工作历练自我学习成长实现员工能力的提升，为员工提供具有挑战性的工作机会、岗位晋升，帮助员工获得广阔的职业发展前景。</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer"></div>
+
+
+    <!-- rightmenu -->
+    <div class="rightmenu">
+        <div class="fixed"></div>
+    </div>
+
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.header').load("header_nlf.html");
+            $('.footer').load("footer_nlf.html");
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 50) {
+                    $('.rightmenu').show();
+                } else {
+                    $('.rightmenu').hide();
+                }
+            });
+
+            $('.rightmenu').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -201,6 +201,25 @@
 }
 
 
+/* rightmenu */
+
+.rightmenu {
+    position: fixed;
+    top: 88%;
+    right: 10px;
+    z-index: 999;
+}
+
+.rightmenu .fixed {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    background: #1a1a1a url("../images/images_nlf/top.jpg") 0 0 no-repeat;
+    border-bottom: none;
+}
+
+
 /* 媒体查询 */
 
 @media (min-width: 429px) {

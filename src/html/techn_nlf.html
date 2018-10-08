@@ -140,12 +140,32 @@
     <div class="footer"></div>
 
 
+    <!-- rightmenu -->
+    <div class="rightmenu">
+        <div class="fixed"></div>
+    </div>
+
+
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(function() {
             $('.header').load("header_nlf.html");
             $('.footer').load("footer_nlf.html");
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 50) {
+                    $('.rightmenu').show();
+                } else {
+                    $('.rightmenu').hide();
+                }
+            });
+
+            $('.rightmenu').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 500);
+            });
         });
     </script>
 

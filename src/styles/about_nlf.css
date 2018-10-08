@@ -63,10 +63,266 @@
 }
 
 
+/* about */
+
+.about {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #333;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.aboutlist {
+    padding: 20px 0 10px;
+    margin-bottom: 0;
+}
+
+.aboutlist li {
+    text-align: center;
+    color: #015198;
+    margin-bottom: 20px;
+}
+
+.aboutlist li img {
+    width: auto;
+    margin-right: 5px;
+    height: 45px;
+    vertical-align: bottom;
+}
+
+.aboutlist li h5 {
+    color: #666;
+    line-height: 24px;
+}
+
+.front {
+    text-align: center;
+}
+
+.front img {
+    width: 100%;
+}
+
+.detail {
+    background: #f7f7f7;
+    overflow: hidden;
+}
+
+.detail dl {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.detail dl dt {
+    float: none;
+    width: 100%;
+}
+
+.detail dl dt img {
+    display: block;
+    width: 100%;
+}
+
+.detail dl dd {
+    float: none;
+    width: 100%;
+    padding: 15px 0;
+    line-height: 24px;
+}
+
+.detail dl dd h3 {
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+
+
+/* column_List */
+
+.column_list {
+    background: #f7f7f7;
+    overflow: hidden;
+    padding: 15px 0 20px;
+}
+
+.column_list .container {
+    overflow: hidden;
+    padding: 0;
+    margin: 0 3%;
+    overflow: hidden;
+}
+
+.column_list .wrapper {
+    padding-left: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.column_list ul li {
+    display: none;
+    width: 100%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.column_list ul li a {
+    display: block;
+}
+
+.column_list ul li img {
+    display: block;
+    width: 100%;
+}
+
+.column_list ul li:nth-of-type(3) {
+    display: block;
+}
+
+.column_list .column_title h4,
+.column_list .column_title .text {
+    line-height: 24px;
+}
+
+.column_list ul li h4 a {
+    display: block;
+    font-size: 18px;
+    color: #1a1a1a;
+    padding: 8px 0 10px;
+}
+
+.column_list ul li .text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+/* rightmenu */
+
+.rightmenu {
+    position: fixed;
+    top: 88%;
+    right: 10px;
+    z-index: 999;
+}
+
+.rightmenu .fixed {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    background: #1a1a1a url("../images/images_nlf/top.jpg") 0 0 no-repeat;
+    border-bottom: none;
+}
+
+
 /* 媒体查询 */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 641px) {
+    .column_list ul li:nth-of-type(4) {
+        display: block;
+    }
+    .column_list ul li {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
     .carousel-indicators {
         bottom: 0;
+    }
+    .aboutlist li img {
+        height: auto;
+    }
+    .column_list .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .column_list ul li:nth-of-type(2) {
+        display: block;
+    }
+    .column_list ul li {
+        width: 33.3%;
+    }
+}
+
+@media (min-width: 991px) {
+    .tabs .container {
+        margin: 0;
+        width: 100%;
+    }
+    .about {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .aboutlist {
+        padding: 40px 0 60px;
+    }
+    .aboutlist li {
+        margin-bottom: 0;
+    }
+    .detail dl dt {
+        float: left;
+        width: 40%;
+    }
+    .detail dl dt img {
+        display: block;
+    }
+    .detail dl dd {
+        float: left;
+        width: 60%;
+        padding: 50px 35px;
+    }
+    .detail dl dd h3 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    .detail dl:nth-of-type(even) dt {
+        float: right;
+    }
+    .column_list {
+        padding: 55px 0 75px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .column_list .container {
+        padding: 0 10px;
+    }
+    .column_list ul li:nth-of-type(1) {
+        display: block;
+    }
+    .column_list ul li {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1199px) {
+    .about {
+        margin: 0 auto;
+        width: 1200px;
+    }
+    .column_list .container {
+        margin: 0 auto;
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .about {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .column_list .container {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
