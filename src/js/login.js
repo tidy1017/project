@@ -72,8 +72,8 @@ $(function($) {
             "username": $('#username').val(),
             "pwd": $('#pwd').val()
         };
-        // var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/login.php";
-        var url = "../js/login.php"
+        var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/login.php";
+        // var url = "../js/login.php"
         $.ajax({
             type: "POST",
             url: url,

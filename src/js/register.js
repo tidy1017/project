@@ -70,8 +70,8 @@ $(function($) {
                 var data = {
                     "username": $('#username').val()
                 };
-                // var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/login.php";
-                var url = "../js/sousuo_tlh.php"
+                var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/sousuo_tlh.php";
+                // var url = "../js/sousuo_tlh.php"
                 $.ajax({
                     type: "POST",
                     url: url,
@@ -119,8 +119,8 @@ $(function($) {
             "username": $('#username').val(),
             "pwd": $('#pwd').val()
         };
-        // var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/login.php";
-        var url = "../js/register.php"
+        var url = "http://10.31.157.19:8080/myapp/ajax/xinlunkeji/src/js/register.php";
+        // var url = "../js/register.php"
         $.ajax({
             type: "POST",
             url: url,
