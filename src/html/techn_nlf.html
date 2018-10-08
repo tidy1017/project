@@ -16,8 +16,8 @@
 </head>
 
 <body>
-    <!-- nav -->
-
+    <!-- header -->
+    <div class="header"></div>
 
 
     <!-- banner -->
@@ -44,12 +44,12 @@
     <!-- tabs -->
     <div class="tabs hidden-sm hidden-xs">
         <div class="container">
-            <a href="#" class="cur">技术开发中心介绍</a>
-            <a href="#">研究领域</a>
-            <a href="#">科研合作</a>
-            <a href="#">研发成果</a>
-            <a href="#">产品与技术服务</a>
-            <a href="#">中心荣誉</a>
+            <a href="techn_nlf.html" class="cur">技术开发中心介绍</a>
+            <a href="http://www.szselen.com/techn/research/index.html">研究领域</a>
+            <a href="http://www.szselen.com/techn/cooperation/index.html">科研合作</a>
+            <a href="http://www.szselen.com/techn/results/index.html">研发成果</a>
+            <a href="http://www.szselen.com/techn/service/InPro/Aramid/index.html">产品与技术服务</a>
+            <a href="http://www.szselen.com/techn/Center/index.html">中心荣誉</a>
         </div>
     </div>
 
@@ -140,13 +140,12 @@
     <div class="footer"></div>
 
 
-
-
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         $(function() {
-            $('.footer').load("footer_nlf.html #footer");
+            $('.header').load("header_nlf.html");
+            $('.footer').load("footer_nlf.html");
         });
     </script>
 
