@@ -201,9 +201,6 @@
 }
 
 
-/* footer */
-
-
 /* 媒体查询 */
 
 @media (min-width: 429px) {
@@ -240,6 +237,9 @@
 }
 
 @media (min-width: 767px) {
+    .carousel-indicators {
+        bottom: 0;
+    }
     .detail_msg .container {
         width: auto;
     }

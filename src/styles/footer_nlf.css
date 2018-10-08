@@ -146,6 +146,40 @@ footer ul li.li2 .tel span {
     font-size: 24px;
 }
 
+.bottom {
+    background: #1a1a1a;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #8d8d8d;
+    font-size: 12px;
+    text-align: center;
+}
+
+.bottom .container {
+    padding: 0 3%;
+}
+
+.footer_text,
+.footer_right {
+    float: none;
+}
+
+.footer_text a {
+    padding: 0 4px;
+}
+
+.footer_text a:nth-of-type(1) {
+    padding-left: 0;
+}
+
+.bottom a {
+    color: #8d8d8d;
+}
+
+.bottom p {
+    margin: 0;
+}
+
 
 /* 媒体查询 */
 
@@ -209,10 +243,24 @@ footer ul li.li2 .tel span {
     footer ul li.li2 .code-img img {
         max-width: 100%;
     }
+    .bottom {
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .footer_text {
+        float: left;
+    }
+    .footer_right {
+        float: right;
+    }
 }
 
 @media (min-width: 1024px) {
     footer .container {
+        padding: 0 10px;
+    }
+    .bottom .container {
         padding: 0 10px;
     }
 }
@@ -221,7 +269,7 @@ footer ul li.li2 .tel span {
     footer .container {
         padding: 0;
         margin: 0 auto;
-        max-width: 1200px;
+        width: 1200px;
     }
     footer ul li {
         width: 10%;
@@ -246,6 +294,11 @@ footer ul li.li2 .tel span {
     footer ul li.li2 .tel {
         margin-left: -5px;
         margin-right: -5px;
+    }
+    .bottom .container {
+        padding: 0;
+        margin: 0 auto;
+        width: 1200px;
     }
 }
 
