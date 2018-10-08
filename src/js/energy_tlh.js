@@ -52,11 +52,11 @@ $(function() {
     // 滚动监听事件
     function jianting() {
         $(window).scroll(function() {
-            // 滚动条距离顶部的距离 大于300px时
+            // 滚动条距离顶部的距离大于等于100px时
             if ($(window).scrollTop() >= 100) {
                 $(".aside").fadeIn(1000); // 开始淡入
             } else {
-                $(".aside").stop(true, true).fadeOut(1000); // 如果小于等于 300 淡出
+                $(".aside").stop(true, true).fadeOut(1000); // 如果小于 100 淡出
             }
         });
     }
