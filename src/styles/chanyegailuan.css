@@ -1,0 +1,476 @@
+@charset "utf-8";
+.img1 {
+    background: lightskyblue!important;
+}
+
+.img2 {
+    background: #888!important;
+}
+
+.nav {
+    background: #f2f2f2;
+    height: 44px;
+    border: none;
+}
+
+.nav-tabs a {
+    height: 44px;
+    border-radius: 0;
+    float: left;
+    background: #f2f2f2;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    border-right: 1px solid #ccc;
+    display: block;
+}
+
+.nav-tabs a.active {
+    color: #fff;
+}
+
+.nav-tabs a:hover::after {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: #015198;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -10px;
+}
+
+.nav-tabs a:hover {
+    background: #015198;
+}
+
+.nav-tabs a:hover {
+    color: white;
+}
+
+.container-fluid {
+    padding: 0 0 0 30px;
+}
+
+.nav-tabs .active {
+    background: #015198!important;
+}
+
+@media(max-width:768px) {
+    .commonweb h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .wwintrotit {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .pro-situationTwo h3 {
+        font-size: 16px;
+    }
+    .clean-productsTwo {
+        margin-top: 15px;
+    }
+    #messages h3 {
+        font-size: 16px;
+    }
+    .engineering h4 {
+        font-size: 14px;
+    }
+    .commonweb span {
+        font-size: 14px;
+        display: block;
+    }
+    .first h2 {
+        padding-bottom: 10px!important;
+    }
+    .secend h2 {
+        padding-bottom: 10px!important;
+    }
+    .Functiondl h3 {
+        font-size: 16px;
+    }
+    .Functiondl dd {
+        padding: 0 0 45px 0;
+    }
+}
+
+@media(min-width:768px) {
+    .commonweb h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .wwintrotit {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .pro-situationTwo h3 {
+        font-size: 24px;
+    }
+    .clean-productsTwo {
+        margin-top: 15px;
+    }
+    #messages h3 {
+        font-size: 24px;
+    }
+    .engineering h4 {
+        font-size: 14px;
+    }
+    .commonweb span {
+        font-size: 16px;
+        display: block;
+    }
+    .clean-productsTwo ul li {
+        width: 20%;
+    }
+    .Functiondl h3 {
+        font-size: 24px;
+    }
+    .Functiondl dd {
+        padding: 60px 35px 45px 15px;
+    }
+}
+
+@media(min-width:992px) {
+    .commonweb h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .wwintrotit {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .pro-situationTwo h3 {
+        font-size: 28px;
+    }
+    .clean-productsTwo {
+        margin-top: 65px;
+    }
+    #messages h3 {
+        font-size: 28px;
+    }
+    .engineering h4 {
+        font-size: 14px;
+    }
+    .commonweb span {
+        font-size: 16px;
+        display: block;
+    }
+    .clean-productsTwo ul li {
+        width: 20%;
+    }
+    .Functiondl h3 {
+        font-size: 28px;
+    }
+    .Functiondl dd {
+        padding: 95px 35px 45px 15px;
+    }
+}
+
+@media(min-width:1200px) {
+    .commonweb h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .wwintrotit {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .pro-situationTwo h3 {
+        font-size: 28px;
+    }
+    .clean-productsTwo {
+        margin-top: 65px;
+    }
+    #messages h3 {
+        font-size: 28px;
+    }
+    .engineering h4 {
+        font-size: 18px;
+    }
+    .commonweb span {
+        font-size: 18px;
+        display: inline;
+    }
+    .clean-productsTwo ul li {
+        width: 20%;
+    }
+    .Functiondl h3 {
+        font-size: 28px;
+    }
+    .Functiondl dd {
+        padding: 115px 35px 45px 15px;
+    }
+}
+
+
+/* 首页 */
+
+#home {
+    padding-top: 45px;
+    padding-bottom: 75px;
+}
+
+.pro-situationOne {
+    padding-bottom: 40px;
+    border-bottom: 1px dashed #D9D9D9;
+}
+
+#home p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.pro-situationTwo {
+    padding-top: 35px;
+    padding-bottom: 55px;
+}
+
+.pro-situationTwo .title {
+    padding-bottom: 30px;
+}
+
+.pro-situationTwo h3 {
+    color: #015198;
+    margin: 0;
+}
+
+
+/* 第二页 */
+
+.commonweb h3 {
+    background: #f2f2f2;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 8px 0 10px 15px;
+    border-left: 5px solid #015198;
+}
+
+.commonweb span {
+    font-weight: 100;
+    padding-top: 5px;
+}
+
+.commonweb p {
+    margin-top: 24px;
+    line-height: 24px;
+    background: white
+}
+
+.wwpadding {
+    box-sizing: content-box;
+    padding: 38px 0 60px 0
+}
+
+.tab-content .first {
+    background: #f2f2f2;
+    padding: 55px 0;
+    margin: 0;
+}
+
+.tab-content .first h2 {
+    padding-bottom: 35px;
+}
+
+.tab-content .first p {
+    line-height: 24px;
+}
+
+.tab-content .first a {
+    text-decoration: none;
+}
+
+.tab-content .secend {
+    padding: 55px 0;
+    background: white;
+    margin: 0;
+}
+
+.tab-content .secend h2 {
+    padding-bottom: 35px;
+}
+
+.tab-content .secend p {
+    line-height: 24px;
+}
+
+.tab-content .secend a {
+    text-decoration: none;
+}
+
+
+/*第三页*/
+
+#messages {
+    padding-bottom: 75px;
+}
+
+#messages p {
+    line-height: 24px;
+    margin: 0;
+}
+
+.time-list {
+    padding-bottom: 50px;
+    list-style: none;
+    margin: 0;
+}
+
+.clean-productsOne .time-list p img {
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.clean-productsOne .time-list p {
+    color: #015198;
+    font-size: 14px;
+    margin: 0;
+    line-height: 24px;
+}
+
+.clean-productsOne .time-list h5 {
+    font-size: 0.83em;
+    font-weight: 500;
+    margin: 0;
+    line-height: 24px;
+}
+
+.engineering {
+    padding-top: 45px;
+}
+
+.engineering-pad {
+    padding: 4%;
+}
+
+.engineering h3 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.engineering a {
+    text-decoration: none;
+}
+
+.right-bg {
+    background: #eee;
+}
+
+.engineering h4 {
+    color: #333;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.more {
+    padding: 10px 20px;
+    display: inline-block;
+    background: #015198;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.more:hover {
+    padding: 10px 20px;
+    display: inline-block;
+    background: #015198;
+    color: #fff;
+    font-size: 14px;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
+
+.engineering-nopad {
+    padding: 0;
+    height: 100%;
+}
+
+.right-bg1 .engineering-pad {
+    padding: 2%;
+    padding-bottom: 0;
+}
+
+.right-bg1 p {
+    line-height: 20px!important;
+}
+
+.clean-productsTwo h3 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.tit a {
+    color: black;
+}
+
+.clean-productsTwo h3 a {
+    text-decoration: none;
+}
+
+.clean-productsTwo ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.clean-productsTwo ul li {
+    list-style: none;
+}
+
+.clean-productsTwo ul p {
+    padding-top: 10px;
+}
+
+.clean-productsTwo li {
+    /* box-sizing: content-box; */
+    padding: 0 5px;
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 0;
+}
+
+.clean-productsTwo li a {
+    text-decoration: none;
+}
+
+
+/*第四页*/
+
+.web {
+    padding: 0;
+}
+
+.wwcausequnimg {
+    padding: 38px 0 60px 0;
+}
+
+.wwintrotit {
+    padding: 8px 0 10px 15px;
+    background: #eee;
+    border-left: 5px solid #015198;
+}
+
+.wqp-pro-content {
+    padding: 38px 0 60px 0;
+}
+
+.web a {
+    text-decoration: none;
+}
+
+.web a p {
+    color: black;
+    margin: 0;
+}
+
+.Functiondl h3 {
+    margin: 0;
+    padding-bottom: 25px;
+}
