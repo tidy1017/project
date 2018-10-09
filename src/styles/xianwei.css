@@ -1,0 +1,679 @@
+@charset "utf-8";
+@media(max-width:768px) {
+    .wwpadding {
+        padding: 20px 0;
+    }
+    .cyw-title {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .wwintronews dl {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .wwintronews h4 {
+        padding: 1% 0 2%;
+    }
+    .wwintronmore {
+        margin-top: 34px;
+    }
+    #profile .nav-tabs a {
+        padding: 14px 2%;
+    }
+    #profile .nav-tabs a {
+        font-size: 14px;
+    }
+    #profile .nav-tabs .row {
+        padding-left: 0;
+    }
+    .wwpackdiv h3 {
+        padding: 4% 0 2% 0;
+    }
+    .wwpacklist {
+        padding: 20px 3%;
+    }
+    .wwpackimg {
+        padding-right: 0;
+    }
+    #messages .nav-tabs a {
+        padding: 14px 2%;
+    }
+    #messages .nav-tabs a {
+        font-size: 14px;
+    }
+    #messages .nav-tabs .row {
+        padding-left: 0;
+    }
+    .wwadddiv h3 {
+        padding: 5% 0 3%;
+    }
+}
+
+@media(min-width:768px) {
+    .wwpadding {
+        padding: 20px 0;
+    }
+    .cyw-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .wwintronews dl {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .wwintronews h4 {
+        padding: 1% 0 2%;
+    }
+    .wwintronmore {
+        margin-top: 14px;
+    }
+    #profile .nav-tabs a {
+        padding: 14px 2%;
+    }
+    #profile .nav-tabs a {
+        font-size: 14px;
+    }
+    .wwpackdiv h3 {
+        padding: 4% 0 2% 0;
+    }
+    .wwpacklist {
+        padding: 20px 3%;
+    }
+    #messages .nav-tabs a {
+        padding: 14px 2%;
+    }
+    #messages .nav-tabs a {
+        font-size: 14px;
+    }
+    .wwvideo {
+        width: 65%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto;
+    }
+    .wwaddnav a {
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+    .wwadddiv h3 {
+        padding: 5% 0 3%;
+    }
+}
+
+@media(min-width:992px) {
+    .wwpadding {
+        padding: 38px 0 60px 0;
+    }
+    .cyw-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .wwintronews dl {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .wwintronews h4 {
+        padding: 2% 0 3% 0;
+    }
+    .wwintronmore {
+        margin-top: 34px;
+    }
+    #profile .nav-tabs a {
+        padding: 14px 0;
+    }
+    #profile .nav-tabs a {
+        margin: 0 19px;
+    }
+    #profile .nav-tabs a {
+        font-size: 16px;
+    }
+    .wwpackdiv h3 {
+        padding: 6% 0 3% 0;
+    }
+    .wwpacklist {
+        padding: 38px 10px;
+    }
+    .wwpacklist ul li {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    .wwpacklist ul li:nth-child(2n) {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    #messages .nav-tabs a {
+        padding: 14px 0;
+    }
+    #messages .nav-tabs a {
+        margin: 0 19px;
+    }
+    #messages .nav-tabs a {
+        font-size: 16px;
+    }
+    .wwvideobg {
+        padding-bottom: 60px;
+    }
+    .wwvideo {
+        width: 480px;
+        height: 860px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .wwenvirdiv p {
+        font-size: 18px;
+        height: 56px;
+        line-height: 56px;
+    }
+    .wwenvirdiv:hover p {
+        height: 100%;
+        line-height: 1450%;
+    }
+    .wwadddiv h3 {
+        padding: 3% 0 2%;
+    }
+    #relation .wwadddiv p {
+        padding-bottom: 5px!important;
+    }
+}
+
+@media(min-width:1200px) {
+    .wwpadding {
+        padding: 38px 0 60px 0;
+    }
+    .cyw-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .wwintronews dl {
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .wwintronews h4 {
+        padding: 2% 0 3%;
+    }
+    .wwintronmore {
+        margin-top: 34px;
+    }
+    #profile .nav-tabs a {
+        padding: 14px 0;
+    }
+    #profile .nav-tabs a {
+        margin: 0 19px;
+    }
+    #profile .nav-tabs a {
+        font-size: 18px;
+    }
+    .wwpackdiv h3 {
+        padding: 6% 0 3% 0;
+    }
+    .wwpacklist {
+        padding: 38px 0;
+    }
+    #messages .nav-tabs a {
+        padding: 14px 0;
+    }
+    #messages .nav-tabs a {
+        margin: 0 19px;
+    }
+    #messages .nav-tabs a {
+        font-size: 18px;
+    }
+    .wwvideobg {
+        padding-top: 60px;
+    }
+    .wwadddiv h3 {
+        padding: 5% 0 3%;
+    }
+}
+
+@media (min-width: 520px) {
+    #relation .wwadddiv p {
+        padding-bottom: 0;
+        line-height: 23px;
+    }
+    #relation .wwadddiv {
+        padding-bottom: 0;
+    }
+    #relation .ww-xs-7 {
+        width: 52.2%;
+        padding-right: 10px;
+    }
+}
+
+.img1 {
+    background: #015198!important;
+}
+
+.nav {
+    background: #f2f2f2;
+    height: 44px;
+    border: none;
+}
+
+.nav-tabs a {
+    height: 44px;
+    border-radius: 0;
+    float: left;
+    background: #f2f2f2;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    border-right: 1px solid #ccc;
+    display: block;
+}
+
+.nav-tabs a.active {
+    color: #fff;
+}
+
+.nav-tabs a:hover::after {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: #015198;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -10px;
+}
+
+.nav-tabs a:hover {
+    background: #015198;
+}
+
+.nav-tabs a:hover {
+    color: white;
+}
+
+.container-fluid {
+    padding: 0 0 0 30px;
+}
+
+.nav-tabs .active {
+    background: #015198;
+}
+
+
+/*第一页*/
+
+.cyw-title {
+    padding: 8px 0 10px 15px;
+    margin-bottom: 15px;
+    background: #eee;
+    border-left: 5px solid #015198;
+}
+
+#home p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.wwgraybg {
+    background: #f7f7f7;
+}
+
+.wwintronews {
+    padding: 0;
+}
+
+.wwintronews h3 {
+    color: #015198;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px 0;
+    margin: 0;
+}
+
+.wwintronews dl {
+    margin: 0;
+}
+
+.wwintronews dt {
+    padding: 0;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.wwintronews dl dt img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.wwintronews dd {
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.wwintronews h4 a {
+    font-size: 22px;
+    color: #333;
+}
+
+.wwintronews h4 {
+    margin: 0;
+}
+
+.wwintronews p {
+    margin: 0;
+}
+
+#home a {
+    text-decoration: none;
+}
+
+.wwintronmore {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    background: #015198;
+    padding: 7px 15px;
+}
+
+.wwintronmore:hover {
+    color: #fff;
+    background: #015198;
+}
+
+
+/*第二页*/
+
+#profile p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+}
+
+#profile a {
+    text-decoration: none;
+}
+
+#profile li {
+    list-style: none;
+}
+
+#profile .nav {
+    background: white;
+    height: 55px;
+    padding-top: 20px;
+    border: none;
+    text-align: center!important;
+    box-sizing: content-box;
+}
+
+#profile .nav-tabs a {
+    height: 55px;
+    border-radius: 0;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    display: inline-block;
+}
+
+#profile .nav-tabs a.active {
+    color: #015198;
+    border-bottom: 3px solid #015198;
+}
+
+#profile .nav-tabs a:hover::after {
+    display: none;
+}
+
+#profile .nav-tabs a:hover {
+    color: #015198;
+    border-bottom: 3px solid #015198;
+}
+
+#profile .container-fluid {
+    padding: 0;
+}
+
+#profile .nav-tabs .active {
+    background: white;
+}
+
+.wwpacklist ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wwpack {
+    background: #f7f7f7;
+    margin: 0;
+}
+
+.wwpack h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.wwpack a {
+    color: #333;
+}
+
+.wwpack a:hover {
+    color: #333;
+}
+
+.wwpackimg {
+    padding-left: 0;
+}
+
+.wwpackimg img {
+    width: 100%;
+}
+
+.wwpacklist li {
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+.wwpackdiv {
+    padding: 0 8px;
+}
+
+
+/*第三页*/
+
+#messages .nav {
+    background: white;
+    height: 55px;
+    padding-top: 20px;
+    border: none;
+    text-align: center!important;
+    box-sizing: content-box;
+}
+
+#messages .nav-tabs a {
+    height: 55px;
+    border-radius: 0;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    border: none;
+    display: inline-block;
+}
+
+#messages .nav-tabs a.active {
+    color: #015198;
+    border-bottom: 3px solid #015198;
+}
+
+#messages .nav-tabs a:hover::after {
+    display: none;
+}
+
+#messages .nav-tabs a:hover {
+    color: #015198;
+    border-bottom: 3px solid #015198;
+}
+
+#messages .container-fluid {
+    padding: 0;
+}
+
+#messages.nav-tabs .active {
+    background: white;
+}
+
+.wwvideobg {
+    background-image: url("../images/images.yls/wwimg97.png");
+}
+
+
+/*第四页*/
+
+#settings p {
+    margin: 0;
+}
+
+#settings li {
+    list-style: none;
+}
+
+#settings .web {
+    padding: 0;
+}
+
+.wwenvirbox {
+    padding-top: 40px;
+    padding-bottom: 38px;
+}
+
+.wwenvirbox ul {
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.wwenvirdiv {
+    position: relative;
+    overflow: hidden;
+}
+
+.wwenvirbox ul li {
+    padding: 15px 13px;
+    box-sizing: border-box;
+}
+
+.wwenvirdiv p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all .3s;
+    transform: translate(0, 0);
+}
+
+.modal-content {
+    position: relative;
+    margin: 0 auto;
+}
+
+.modal span {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: black;
+}
+
+
+/*第五页*/
+
+.wwaddnav {
+    padding: 0;
+    padding-top: 40px;
+    margin: 0;
+}
+
+.wwaddnav a {
+    display: block;
+    float: left;
+    width: 50%;
+    color: #1a1a1a;
+    text-align: center;
+    background: #e6e6e6;
+    text-decoration: none;
+}
+
+.wwaddnav a:hover {
+    color: white;
+    background: #015198;
+}
+
+#relation .web {
+    padding: 0;
+}
+
+.wwaddlist {
+    padding: 30px 0 38px 0;
+    margin: 0;
+}
+
+.wwaddlist>div {
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.wwaddbox {
+    width: 100%;
+    margin: 0;
+    background: #f7f7f7;
+}
+
+.wwaddimg {
+    padding: 0;
+}
+
+.wwadddiv h3 {
+    color: #015198;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.wwadddiv {
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 18px;
+}
+
+.wwaddimg img {
+    display: block;
+    width: 100%;
+}
+
+.wwadddiv p {
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.wwaddicon {
+    height: auto;
+    padding-left: 28px;
+    background: url("../images/images.yls/wwimg40.png") no-repeat 3px 4px;
+}
+
+.wwadddh {
+    background: url("../images/images.yls/wwimg15.png") no-repeat left 5px;
+    padding-left: 28px;
+}
+
+.wwaddcz {
+    background: url("../images/images.yls/wwimg41.png") no-repeat 1px 3px;
+    padding-left: 28px;
+}

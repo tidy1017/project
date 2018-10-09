@@ -1,6 +1,6 @@
 $(function() {
     var btns = $('.nav .row a'),
-        tabsDiv = $('.tab-content>div');
+        tabsDiv = $('body>.tab-content>div');
     btns.eq(0).addClass('active');
     tabsDiv.eq(0).addClass('show');
     btns.on('click', function() {
