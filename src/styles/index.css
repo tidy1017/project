@@ -215,6 +215,10 @@ width: 497px;
 .gaibian:hover #bian span{
     color: white
 }
+.image-gupiao{
+    width:800px;
+    height: 440px;
+}
 .p-jihe{
     padding: 31px 28px;
 }
@@ -327,7 +331,7 @@ width: 497px;
 .stock-now{
     width: 82.5%;
     float: left;
-    display: inline-block;
+    display: block;
     font-size: 14px;
     color: #015198;
     height: 56px;
@@ -335,6 +339,56 @@ width: 497px;
     padding-left: 27px;
     background: #f2f2f2;
 }
+.html-2-nav a{
+    display: block;
+    float: left;
+    padding: 10px 24px;
+    background: #f7f7f7;
+    position: relative;
+}
+.html-2-h2{
+    margin-bottom: 38px;
+}
+.html-2-nav a:hover{
+    background:#015198;
+    color: white;
+    text-decoration: none; 
+}
+.html-2-nav .tc{
+    display: block;
+    background:#015198;
+    color: white; 
+}
+.html-2-nav .sijiao{
+    display: block;
+}
+.html-2-nav span{
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -9px;
+    left: 50%;
+    display: none;
+    margin-left: -9px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #015198;
+}
+.html-2-nav a:hover span{
+    display: block;
+}
+.beijin{
+    background: #f7f7f7
+}
+.html-2-h2-p p{
+    border-bottom: 1px solid #d9d9d9;
+    color: #1a1a1a;
+    padding-bottom: 15px;
+ }
+ .hid{
+     display: none;
+ }
+
 .h-report th {
     font-size: 16px;
     color: #fff;
@@ -343,6 +397,61 @@ width: 497px;
     background: #015198;
     font-weight: normal;
     border-right: 1px solid #fff;
+}
+#chulai{
+    margin-top: 35px
+}
+.youxiang p span{
+    margin-right: 10px;
+}
+.youxiang p{
+    margin-right:9px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    padding: 0;
+}
+.btn-primary{
+    background:white;
+    background-color: #337ab7;
+    border:none;
+}
+.youxiang li{
+    padding-left:16px;  
+    position: relative;
+    padding-top:35px;
+    margin-bottom: 10px;        
+}
+.youxiang .anjian{
+    padding-top:25px;
+}
+.youxiang .anjian input{
+    width: 119px;
+    height: 35px;
+    background: #005197;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.youxiang #idea{
+    height: 133px;
+    width: 100%;
+}
+.youxiang input{
+    height: 35px;
+    padding: 0 10px; 
+    background:white; 
+}
+.youxiang .email{
+    width: 345px;
+}
+.youxiang .text{
+    width: 100%;
 }
 .h-table table {
     border-bottom: 1px solid #ddd;
@@ -382,6 +491,28 @@ width: 497px;
      float: left;
      width:20%;  
  }
+ .youxiang{
+     width: 946px;
+     margin: 0 auto;
+ }
+ .modal-content{
+    width: 80%;
+    height:80%;
+    margin-top:15%;
+    margin-left:10%;
+}
+.padd{
+    padding: 30px 0 0 0 ;
+}
+ .beijin{
+    padding: 20px 23px 25px;
+ }
+ .html-2-h2 h3{
+     font-size: 20px;
+ }
+ .new-img{
+     padding-top:56px;
+ }
  .h-table th {
     font-size: 17px;
     height: 65px;
@@ -411,6 +542,10 @@ width: 497px;
  font-size: 18px;
  border-bottom:3px solid white; 
 }
+.h-report td {
+    height: 55px;
+    font-size: 16px;
+}
 .h-report {
     padding-bottom: 35px;
     padding-top: 56px;
@@ -427,6 +562,58 @@ width: 497px;
      line-height: 22px;
      font-size: 17px;
  }  
+ .modal-content{
+     width: 80%;
+     height:80%;
+     margin-top:45%;
+     margin-left:10%;
+ }
+ .padd{
+    padding: 0 ;
+}
+ .html-2-h2{
+    margin-bottom: 15px;
+}
+ .new-img img{
+     width: 100%;
+ }
+ .html-2-h2-p{
+     padding: 0;
+     margin-top:13px;
+ }
+ .youxiang .anjian{
+     padding-top:5px;
+ }
+ .youxiang #idea{
+     height: 70px;
+ }
+ .youxiang .anjian input{
+     font-size: 18px;
+ }
+ .beijin{
+     background:white;
+ }
+.youxiang .email{
+    width: 100%;
+}
+.youxiang li{
+padding-right: 10px;
+}
+ .html-2-h2 h3{
+    font-size: 18px;
+}
+ .new-img{
+    padding-top:25px;
+}
+ .stock-img {
+    text-align: center;
+    padding-top: 43px;
+    overflow-x: scroll;
+}
+ .h-report {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
  .h-table th {
     font-size: 14px;
     height: 65px;
@@ -473,6 +660,13 @@ width: 497px;
      font-size: 16px;
      border-bottom:3px solid white; 
  }
+ .h-table td {
+     font-size: 14px;
+ }
+ .h-table {
+    padding: 20px 0 30px;
+    overflow-x: scroll;
+}
  .image{
      padding-bottom: 20px;
  }

@@ -1,5 +1,4 @@
 <?php
-  
     error_reporting(E_ALL ^ E_DEPRECATED);
     $db=mysql_connect("localhost","root",123456);
     mysql_select_db("login",$db);
@@ -10,7 +9,6 @@
     $sql1="SELECT * FROM `login_user` WHERE (u_name='$username')";
     $date1=mysql_query($sql1);
     $result=mysql_fetch_array($date1);
-    
         if(!$result){
             $sql2="INSERT INTO `login_user`(`u_id`, `u_name`, `u_passward`) VALUES (NULL,'$username','$pwd')";
             $date2=mysql_query($sql2);

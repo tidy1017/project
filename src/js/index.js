@@ -1,6 +1,5 @@
 
 $(function(){ 
-    
     $('.nav-it a').on('click',function(){
      var that=$(this).index();
      $(this).addClass('act');
@@ -25,5 +24,55 @@ $(function(){
                $('#anniu').css('display','none');
                $('#yincang').css('display','block');
            })
+           $('#chulai').on('click',function(){
+            $('#chulai').css('display','none');
+            $('.hid').removeClass('hid')
+            $('.hid td').css({    
+                'border-bottom': '1px solid #e8e8e8',
+                'border-left': '1px solid #e8e8e8',
+                'height': '45px',
+                'vertical-align': 'middle',
+                'padding-left': '3%',
+                'padding-right': '3%',
+                'font-size': '14px',
+                'color': '#1a1a1a',
+                'padding-top': '10px',
+                'padding-bottom': '10px',
+                'text-align': 'center'})
+        })
+           setInterval(function(){
+            var mydate=new Date();
+            var year=mydate.getFullYear();
+            var month=mydate.getMonth()+1;
+            var date=mydate.getDate();
+            var hours=mydate.getHours();
+            var minutes=mydate.getMinutes();
+            var seconds=mydate.getSeconds();
+            var t=year+'-'+month+'-'+date+' '+hours+':'+minutes+':'+seconds;
+             $('._gujia_time').html(t);
+           },1000)
+         var $spa=$('<a href="#">返回顶部</a>');
+        
+        $(window).scroll(function(){
+            if($(window).scrollTop()>300){
+                $spa.css({
+                    'position': 'fixed',
+                    'width': '54px',
+                    'height': '54px',
+                    'cursor': 'pointer',
+                    'display':'block',
+                    'background':'#1a1a1a',
+                    'color':'white',
+                    'text-align':'center',
+                    'top':'80%',
+                    'right':'10%',
+                    'text-decoration':'none'
+                  }); 
+                  $('body').append($spa)
+            }else{
+                $spa.css('display','none')
+            }
+        })
+
 }
 )
