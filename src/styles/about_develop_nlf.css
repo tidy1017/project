@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* banner */
+
+.carousel-indicators li {
+    background: #a29b9b;
+    width: 12px;
+    height: 12px;
+    border: none;
+}
+
+.carousel-indicators .active {
+    background: #015198;
+}
+
+
+/* tabs */
+
+.tabs {
+    background: #f2f2f2;
+    text-align: center;
+    box-shadow: 0 3px 5px #ddd;
+}
+
+.tabs .container {
+    padding: 0;
+}
+
+.tabs .cur,
+.tabs a:hover {
+    background: #015198;
+    color: #fff;
+}
+
+.tabs a {
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-right: 1px solid #ccc;
+    color: #1a1919;
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+}
+
+.tabs a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #015198;
+    display: none;
+}
+
+.tabs .cur:after,
+.tabs a:hover:after {
+    display: block;
+}
+
+
+/* rightmenu */
+
+.rightmenu {
+    position: fixed;
+    top: 88%;
+    right: 10px;
+    z-index: 999;
+}
+
+.rightmenu .fixed {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    background: #1a1a1a url("../images/images_nlf/top.jpg") 0 0 no-repeat;
+    border-bottom: none;
+}
+
+
+/* develop */
+
+.develop {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.history {
+    position: relative;
+}
+
+.owl-item img {
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+}
+
+.owl-item h5 {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    color: #333;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-nav span {
+    font-size: 80px;
+    color: rgb(153, 153, 153);
+    position: absolute;
+}
+
+.owl-nav span:hover {
+    color: rgb(1, 81, 152);
+}
+
+.owl-nav button:nth-of-type(1) span {
+    left: -10px;
+    top: 120px;
+}
+
+.owl-nav button:nth-of-type(2) span {
+    right: -10px;
+    top: 120px;
+}
+
+.honorbtn {
+    max-width: 1030px;
+    font-size: 18px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+    background: url('../images/images_nlf/honorbtnbg.png') repeat-x 0 center;
+}
+
+
+/* 媒体查询 */
+
+@media (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 0;
+    }
+    .honorbtn {
+        margin: 40px auto;
+    }
+}
+
+@media (min-width: 991px) {
+    .tabs .container {
+        margin: 0;
+        width: 100%;
+    }
+    .owl-item h5 {
+        height: 40px;
+        line-height: 40px;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    .owl-nav button:nth-of-type(1) span {
+        left: -40px;
+        top: 120px;
+    }
+    .owl-nav button:nth-of-type(2) span {
+        right: -40px;
+        top: 120px;
+    }
+    .honorbtn {
+        margin: 70px auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .develop {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .develop {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .develop {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

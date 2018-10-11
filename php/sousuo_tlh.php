@@ -1,7 +1,7 @@
 <?php
 //   注册时，实时验证用户名
     error_reporting(E_ALL ^ E_DEPRECATED);
-    $db=mysql_connect("localhost","root",123456);
+    $db=mysql_connect("localhost","root","123456");
     mysql_select_db("login",$db);
     mysql_query(`set names utf-8`);
     header("Content-type:text/html;charset=utf-8");

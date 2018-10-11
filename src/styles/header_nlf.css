@@ -1,76 +1,221 @@
 @charset "utf-8";
-header {
-    width: 100%;
-    background: #fff;
-    position: relative;
+.navbar {
+    border: none;
 }
 
-.headercont {
+.navbar-header {
+    background: #ffffff;
     padding-top: 30px;
     padding-bottom: 10px;
 }
 
-header .web {
-    padding-left: 3%;
-    padding-right: 3%;
+.navbar-header .navbar-brand {
+    display: block;
+    padding: 0;
+    margin-left: 3%;
 }
 
-.header_right {
-    float: right;
+.navbar-brand>img {
+    float: left;
+}
+
+.navbar-brand>img:nth-of-type(2) {
+    height: 34px;
+    border-left: 1px solid #ccc;
+    margin-left: 7px;
+    padding-left: 12px;
+    padding-top: 4px;
+}
+
+.navbar-header img {
+    height: 35px;
+    display: block;
 }
 
 .navicon {
+    border: none;
+    background: #015198 url('../images/images_nlf/navicon.png') no-repeat;
     width: 28px;
     height: 23px;
-    background: #015198 url("../images/images_nlf/navicon.png") no-repeat;
     background-size: 28px;
-    float: right;
-    margin-left: 15px;
-    margin-top: 10px;
+    border-radius: 0;
+    margin-right: 3%;
 }
 
-.searchph {
-    background: #015198 url("../images/images_nlf/searchicon.png") no-repeat;
+.navbar-default .navicon:hover,
+.navbar-default .navicon:focus {
+    background: #015198 url('../images/images_nlf/navicon.png') no-repeat;
+    width: 28px;
+    height: 23px;
+    background-size: 28px;
+}
+
+.searchicon {
+    border: none;
+    background: #015198 url('../images/images_nlf/searchicon.png') no-repeat;
     width: 28px;
     height: 28px;
     background-size: 28px;
     vertical-align: 3px;
-    margin-top: 6px;
+    border-radius: 0;
+}
+
+.navbar-default .searchicon:hover,
+.navbar-default .searchicon:focus {
+    background: #015198 url('../images/images_nlf/searchicon.png') no-repeat;
+    width: 28px;
+    height: 28px;
+    background-size: 28px;
+}
+
+.navbar-header .fixsearch {
+    width: 100%;
+    float: right;
+    height: 35px;
+    background: none;
+    position: fixed;
+    left: 0;
+    top: 96px;
+    z-index: 999;
+}
+
+.fixsearch .searchbox {
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 76%;
+    padding: 6px 0;
+    height: 36px;
+}
+
+.searchbox .searchtext {
+    width: 80%;
+    height: 22px;
+    padding: 0 10px;
+    color: #999;
+    font-size: 13px;
+    line-height: 22px;
+    float: left;
+    background: none;
+}
+
+.searchbox .searchbtn {
+    width: 26px;
+    height: 22px;
+    float: right;
+    background: url('../images/images_nlf/searchphone.png') no-repeat center center;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.dpnone {
+    display: none!important;
+}
+
+.dpblock {
+    display: block!important;
+}
+
+.navbar-collapse {
+    border: none;
+    padding: 0;
+}
+
+.navbar-collapse ul li {
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.navbar-collapse ul {
+    margin: 0;
+}
+
+.navbar-collapse ul li>a {
+    padding: 10px 20px;
+    color: #333!important;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-menu>li {
+    border-bottom: none!important;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background: #fff;
+}
+
+.panel {
+    border: none;
+    box-shadow: 0 0 0 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.panel .panel-heading {
+    border: none;
+    background: #fff;
+    padding: 0;
+}
+
+.panel-group {
+    margin-bottom: 0;
+}
+
+.panel-group .panel {
+    margin-top: 0!important;
+}
+
+.panel-title {
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 24px;
+}
+
+.panel-body {
+    border: none!important;
+    padding: 0;
+}
+
+.panel-body>ul {
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.panel-body>ul>li {
+    border: none;
+}
+
+.panel-body>ul>li>a {
     display: inline-block;
+    padding: 0;
+    padding-left: 16px;
+    line-height: 24px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
-
-/* 媒体查询 */
-
-@media (min-width: 991px) {
-    .headercont {
-        padding-bottom: 0;
-    }
-    .navicon {
-        display: none;
-    }
-    .searchph {
-        display: none;
-    }
+.panel-body .well {
+    padding: 0;
+    border: none;
+    margin-bottom: 0;
 }
 
-@media (min-width: 1023px) {
-    header .web {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+.panel-body .well>ul {
+    padding: 0;
 }
 
-@media (min-width: 1199px) {
-    header .web {
-        margin: 0 auto;
-        max-width: 1200px;
-    }
+.panel-body .well>ul>li {
+    border-bottom: none;
 }
 
-@media (min-width: 1260px) {
-    header .web {
-        padding-left: 0;
-        padding-right: 0;
-    }
+.panel-body .well>ul>li>a {
+    display: block;
+    padding: 6px 30px;
+    line-height: 24px;
+    font-size: 0.83em;
 }

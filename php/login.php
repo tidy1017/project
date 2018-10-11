@@ -1,7 +1,7 @@
 <?php
     header("Content-type:text/html;charset=utf-8");
     error_reporting(E_ALL ^ E_DEPRECATED);
-    $db=mysql_connect("localhost","root",123456);
+    $db=mysql_connect("localhost","root","123456");
     mysql_select_db("login",$db);
     mysql_query(`set names utf-8`);
    

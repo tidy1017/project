@@ -33,3 +33,12 @@ ul,
 li {
     list-style: none;
 }
+
+.clearfix {
+    *zoom: 1;
+}
+
+input {
+    border: none;
+    outline: none;
+}
