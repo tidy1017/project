@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        padding: 0px 0px !important;
+    }
+
+    .wwstock img {
+        height: 42px;
+    }
+    .wwlogo img{
+        height: 42px;
+    }
+
+    .container {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .wwlogo {
+        display: block;
+        float: left;
+        margin-top: 20px;
+        margin-left: 20px!important;
+    }
+
+    .wwstock {
+        display: block;
+        float: left;
+        border-left: 1px solid #ccc;
+        margin-left: 7px;
+        padding-left: 12px;
+        margin-top: 24px;
+
+    }
+
+    .list-nav {
+        margin-bottom: 0px;
+        padding-left: 50px;
+      
+        
+
+    }
+
+    .list-form {
+        position: absolute;
+        right: 240px;
+        top: 5px;
+    }
+
+    .form-control {
+        background-image: url("../images/image/wwimg05.png");
+        background-repeat: no-repeat;
+        background-position-x: 170px;
+        background-position-y: 7px;
+        cursor: pointer;
+    }
+
+    .banner {
+        margin-top: 90px !important;
+
+    }
+    .tab-h2{
+        color: #000;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 45px 0 10px;
+    }
+    .info-content p{
+        font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000;
+    text-decoration: none;
+    }
+    .info-content h4{
+        color: #000;
+        font-size: 14px;
+    }
+    .info-content img{
+        transition: all 0.5s;
+    transition-property: initial;
+    transition-duration: 0.5s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+   transform: scale(1);
+}
+.info-content img:hover{
+    transform: scale(1.05);
+}
+/* .carousel-inner{
+    margin-top: 50px;
+} */
+    .indexmore{
+        text-align: center;
+        padding-top: 25px;
+        
+    }
+    .indexmore a {
+    display: inline-block;
+    background: #005197;
+    color: #fff;
+    margin: 0 auto;
+    padding: 8px 28px;
+    font-size: 12px;
+}
+.col{
+    background: #005197;
+   /* padding-top: 150px;
+   padding-bottom: 90px; */
+  
+}
+.wwprolifirstmore {
+
+    background: #fff;
+    color: #005197;
+    font-size: 12px;
+    /* padding-top: 30px; */
+    /* display: inline-block; */
+    /* padding: 5px 28px; */
+    /* margin-top: 35px; */
+    padding: 5px;
+    margin-top: 30px!important;
+
+   
+}
+.ww-left{
+    padding-top: 30px;
+}
+.ww-right{
+    padding-top: 70px;
+}
+.box{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 247px;
+   right: 0;
+    width: 842px;
+    height: 245px;
+    z-index: 99;
+    transform: translate(0,208px);
+    transition: all 0.5s;
+    
+}
+.box:hover{
+    transform: translate(0,0);
+}
+
+   .img1{
+       position: relative;
+       z-index: 999;
+   }
+   .img2{
+       position: relative;
+       z-index: 999;
+   }
+   .box1{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0px;
+   right: 420px;
+   width: 422px;
+   height: 248px;
+   z-index: 1000;
+   transform: translate(0,212px);
+   transition: all .5s;
+   }
+   .box1:hover{
+       transform: translate(0,0)
+   }
+   .box2{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0px;
+   right: 0px;
+   width: 422px;
+   height: 248px;
+   z-index: 1000;
+   transform: translate(0,212px);
+   transition: all .5s;
+   }
+   .box2:hover{
+       transform: translate(0,0);
+   }
+   .content{
+    background: url(../images/image/wwpic179.jpg) repeat;
+    
+    position: relative;
+    z-index: 1001;
+    padding-bottom: 20px;
+   }
+   .content img{
+       width: 343px;
+   }
+   .content .p1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+   }
+   .content .p2{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+   }
+  .content .p4{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .content .p10{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+.wwindextitcopy{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+   padding-bottom: 30px;
+}
+.wwindextit{
+    color: #fff;
+    padding-bottom: 16px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 22px;
+}
+/* .more-top{
+    background-image: url("images/123.jpg");
+    background-repeat: no-repeat;
+} */
+.content img{
+        transition: all 0.5s;
+    transition-property: initial;
+    transition-duration: 0.5s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+   transform: scale(1);
+}
+.content img:hover{
+    transform: scale(1.05);
+}
+.wwindextit{
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 22px;
+   padding-top: 10px;
+}
+
+.wwinnoright ul li {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-right: 0 !important;
+    width: 50% !important;
+   float: left;
+   margin-bottom: 15px;
+   position: relative;
+
+   
+}
+.wwinnoright ul li p {
+    bottom: -10px;
+    position: absolute;
+    padding: 0 8px;
+    left: 0; 
+     width: 100%;
+     height: 34px; 
+    line-height: 34px; 
+    background: rgba(0, 0, 0, 0.5);
+     /* font-size: 12px;    */
+}
+@media (min-width: 768px) {
+    
+    .wwinnoright  ul li p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .wwinnoright ul li p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 375px) {
+    
+    .wwinnoright ul li p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .more-top img{
+      width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .more-top img{
+       width: 1024px;
+    }
+}
+
+
+
+@media (min-width: 375px) {
+    
+    .wwprolifirst p {
+        width: 320px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+    .wwprolifirst p{
+     width: 750px;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .wwprolifirst p{
+     width: 350px;
+     padding-bottom: 30px;
+     padding: 20px 5px;
+   
+      /* height: 400px; */
+    }
+}
+@media (min-width: 1200px) {
+    
+    .wwprolifirst p a{
+     width: 350px;
+     padding-bottom: 30px;
+     padding: 20px 5px;
+   
+      /* height: 495px; */
+    }
+}
+@media (min-width: 1200px) {
+    
+    .wwprolifirst h3{
+    margin-top: 100px;
+     padding-bottom: 10px;
+      /* height: 495px; */
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .more-under img{
+     width: 620px;
+    }
+}
+/* @media (min-width: 320px) {
+    
+    .more-under img{
+     
+    }
+} */
+
+@media (min-width: 1300px) {
+    
+    .wwprolifirst p{
+     width: 425px;
+     height: 495px;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .wwimg07 img{
+        width: 768px;
+    }
+}
+@media(min-width:768px){
+    .wwinnoright img{
+        width:357px;
+    }
+}
+@media (min-width: 1300px) {
+    
+    .item{
+     /* width: 842px; */
+     padding: 0;
+    
+    
+    }
+}
+.wwinnoright ul li img{
+    transition: all 0.5s;
+    transition-property: initial;
+    transition-duration: 0.5s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+   transform: scale(1);
+}
+.wwinnoright ul li img:hover{
+    transform: scale(1.05);
+}
+.footer-left{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 99999;
+   
+}
+.footer-left li{
+    list-style-type: none;
+
+    background: #1a1a1a;
+    width: 54px;
+    height: 54px;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+.footer-left span{
+    color: #fff;
+    line-height: 54px;
+    width: 54px;
+    text-align: center;
+}
+.footer-left li{
+    position: relative;
+}
+#box-none{
+    background: #005197;
+    width: 185px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 100;
+    padding: 0 18px 0 45px; 
+    line-height: 53px;
+    height: 53px;
+    font-size: 16px;
+    /* display: none; */
+    transform: translate(185px,0);
+   transition: all .5s;
+   
+}
+#li1:hover #box-none{
+      transform: translate(0,0);
+}
+#box3{
+    background: #005197;
+    width: 185px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 18px 0 45px; 
+    line-height: 53px;
+    height: 53px;
+    font-size: 16px;
+    /* display: none; */
+    transform: translate(185px,0);
+   transition: all .5s;
+}
+#li2:hover #box3{
+    transform: translate(0,0);
+}
+#box4{
+    background: #005197;
+    width: 185px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 18px 0 45px; 
+    line-height: 53px;
+    height: 53px;
+    font-size: 16px;
+    /* display: none; */
+    transform: translate(185px,0);
+   transition: all .5s;
+}
+#li3:hover #box4{
+    transform: translate(0,0);
+}
+#box5{
+    background: #005197;
+    width: 185px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 18px 0 45px; 
+    line-height: 53px;
+    height: 53px;
+    font-size: 16px;
+    /* display: none; */
+    transform: translate(185px,0);
+   transition: all .5s;
+}
+#li4:hover #box5{
+    transform: translate(0,0);
+}
+#box6{
+    background: #005197;
+    width: 185px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    padding: 0 18px 0 45px; 
+    line-height: 53px;
+    height: 53px;
+    font-size: 16px;
+    /* display: none; */
+    transform: translate(185px,0);
+   transition: all .5s;
+}
+#li5:hover #box6{
+    transform: translate(0,0)
+}
+.footer{
+    padding-top: 30px;
+    
+  
+}
+.wwindexhdright ul li{
+    list-style-type: none;
+    padding-left: 15px;
+    background: url(../images/image/wwimg94.png) no-repeat left;
+    padding: 5px 10px;
+    
+    
+}
+.wwindexhdright ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+@media (min-width: 1199px) {
+    
+    .wwindexhdright{
+        padding: 35px 22px;
+
+    }
+    }
+    @media (min-width: 991px) and (max-width:1204px){
+    
+    .wwindexhdright{
+        float: left;
+    width: 33%;
+    background: #005197;
+    /* height: 100%; */
+    position: absolute;
+    right: 0;
+    padding-bottom: 19px;
+    padding-top: 5px;
+    }
+    }
+    @media (min-width:1100px) and (max-width:1600px) {
+        .wwindexhdright{
+        float: left;
+    width: 33%;
+    background: #005197;
+    /* height: 100%; */
+    position: absolute;
+    right: 0;
+    padding-bottom: 19px;
+    padding-top: 30px;
+    }
+     }
+@media (min-width: 1199px) {
+    
+    .wwindexhdright h3{
+        padding-bottom: 30px;
+        padding-left: 15px;
+        
+    }
+    }
+    @media (min-width: 991px) {
+    
+    .wwindexhdright h3{
+        font-size: 22px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+    }
+    }
+    @media (min-width: 1199px) {
+    
+    .wwindexhdright ul li{
+      padding-bottom: 18px;
+      margin-top: 4px;
+        
+    }
+    }
+    @media (min-width: 991px) {
+    
+    .wwindexhdright ul li{
+      padding-bottom: 11px;
+      
+    }
+    }
+    @media (min-width: 1199px) {
+    
+    .wwindexpage{
+       margin-top: 50px;
+       padding-left: 16px;
+     
+        
+    }
+    }
+    
+    .bottom-left{
+       
+        text-align: center;
+    }
+   
+    .bottom-left  a{
+        text-decoration: none;
+        color:#333;
+    }
+    .bottom-left h3{
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+    .bottom-left p{
+    padding-top: 5px;
+    height: 46px;
+    
+    line-height: 20px;
+    }
+  .bottom-left div{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-right: 1px solid #d0d0d1;
+  }
+
+
+@media (min-width: 991px){
+.footerBottom {
+    text-align: left;
+    padding-top: 15px;
+    line-height: 54px;
+    padding-bottom: 15px;
+}
+}
+.footerBottom {
+    background: #1A1A1A;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #8d8d8d;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+@media (min-width: 1260px){
+.footerWeb, .commonweb {
+    padding-right: 0;
+    padding-left: 0;
+}
+}
+@media (min-width: 1199px){
+.commonweb {
+    margin: 0px auto;
+    max-width: 1200px;
+}
+}
+@media (min-width: 1024px){
+.commonweb {
+    padding: 0px 10px;
+}
+}
+@media (min-width: 991px){
+.footer-text {
+    float: left;
+}
+}
+@media (min-width: 320px) and(max-width:420px){
+    .footer-text{
+        text-align: center;
+        
+    }
+}
+@media (min-width: 991px){
+.footer-right {
+    float: right;
+}
+}
+.nav-list>li>ul{
+    display: none;
+    list-style-type: none;
+    background: #005197;
+    font-size: 12px;
+}
+.nav-list{
+    position: relative;
+}
+.nav-list>li>ul{
+   position: absolute;
+   top: 50px;
+   width: 110px;
+}
+.nav-list>li>ul>li{
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+    @media(min-width:320px) and (max-width:1024px){
+    body>ul>li{
+			/* background: #aaa; */
+            border-bottom: solid 1px #fff;
+			margin: 15px 4px;
+			width: 100%;
+			cursor: pointer;
+			list-style-type: none;
+            color: white;
+            font-size: 20px;
+			}
+			li ul{
+                display: none;
+                font-size: 15px!important;
+                margin-left: 30px;
+			
+			list-style-type: none;
+			}
+            #list>li>ul>li{
+                font-size: 12px!important;
+            list-style-type: none;
+            color: #d0d0d1!important;
+            
+            }
+            #list{
+
+                background: #333;
+                position: relative;
+                /* height: 400px; */
+            }
+            ul{
+                margin-bottom: -11px!important;
+            }
+            .p11 img{
+               /* position: absolute; */
+               /* left: 100px; */
+               width: 62px;
+               margin-left: 120px;
+               background: #333;
+            }
+            .p12 img{
+               /* position: absolute; */
+               /* right: 139px; */
+               width: 62px;
+               float: right;
+               margin-top: -72px;
+               margin-right: 120px;
+               background: #333;
+            }
+            #btn{
+                float: right;
+                background-image: url("../images/image/icon1.jpg");
+                background-repeat: no-repeat;
+                background-position-x: 5px;
+                width: 30px;
+                height: 20px;
+            }
+            .ulzi>li {
+                padding: 5px 0;
+            }
+            
+
+    }
+   
+
+    
+    @media(min-width:1200px){
+        #list>li{
+            float: left;
+            margin: 45px 27px;
+            list-style-type: none;
+            font-size: 15px;
+           color: #fff;
+        }
+        li ul{
+            font-size: 12px!important;
+            list-style-type: none;
+            color: #d0d0d1!important;
+            /* margin-left: 30px!important; */
+            
+            
+        }
+        li ul li{
+            margin: 10px 5px;
+        }
+        #list{
+            background: #1a1a1a;
+            height: 350px;
+            position: relative;
+            margin-bottom: 1px;
+        }
+        .p11 img{
+           position: absolute;
+           right: 150px;
+           top: 110px;
+           border-left: solid 1px white;
+           padding-left: 35px;
+        }
+        .p12 img{
+            
+            position: absolute;
+            right: 15px;
+            top: 110px;
+
+            
+        }
+        #btn{
+            display: none;
+        }
+        
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid head">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand wwlogo ">
+                    <img src="http://www.szselen.com/webimages/wwimg01.png " alt="新纶科技" class="png img-responsive">
+                </a>
+                <span class="wwstock">
+                    <img src="http://www.szselen.com/webimages/wwimg02.png" alt="" class=" png img-responsive">
+                </span>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right list-nav" id="navbar-collapse">
+                <div class="wheadrighthttop list3 hidden-sm hidden-xs">
+                    <ul class="nav nav-pills">
+                        <li role="presentation" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                成员企业网站群
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">OA办公系统</a>
+                                </li>
+                                <li>
+                                    <a href="#">电子功能材料事业</a>
+                                </li>
+                                <li>
+                                    <a href="#">本部</a>
+                                </li>
+                                <li>
+                                    <a href="#">江天精密</a>
+                                </li>
+                                <li>
+                                    <a href="#">上海瀚海实业</a>
+                                </li>
+                                <li>
+                                    <a href="#">超净产品事业部</a>
+                                </li>
+                                <li>
+                                    <a href="#">科创&净化工程事业部</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="collapse navbar-collapse list-form" id="bs-example-navbar-collapse-1">
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+
+                        </div>
+
+                    </form>
+                </div> 
+
+                <ul class="nav navbar-nav nav-list">
+                    <li class="active">
+                        <a href="index.html"> 首页</a>
+                    </li>
+                    <li>
+                        <a href="information.html"> 产品发展</a>
+                        <ul>
+                            <li>产业概览</li>
+                            <li>先进材料</li>
+                            <li>清洁工程与超净产品</li>
+                            <li>材料衍生智造</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="case.html"> 产品与服务</a>
+                        <ul>
+                            <li>电子功能材料</li>
+                            <li>新能源材料</li>
+                            <li>光电显示功能材料</li>
+                            <li>高性能纤维</li>
+                            <li>科创&洁净工程</li>
+                            <li>超净产品</li>
+                            <li>电子材料构件</li>
+                            <li>智能模塑</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html"> 技术创新</a>
+                        <ul>
+                            <li>技术开发中心介绍</li>
+                            <li>研究领域</li>
+                            <li>科研合作</li>
+                            <li>研发成果</li>
+                            <li>产品与技术服务</li>
+                            <li>中心荣誉</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">关于新纶</a>
+                        <ul>
+                            <li>公司概括</li>
+                            <li>管理架构</li>
+                            <li>发展历程</li>
+                            <li>荣誉资质</li>
+                            <li>产业基地</li>
+                            <li>网络营销</li>
+                            <li>企业文化</li>
+                            <li>资料下载</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">新闻中心</a>
+                        <ul>
+                            <li>公司要闻</li>
+                            <li>行业新闻</li>
+                            <li>展会与活动</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">投资者关系</a>
+                        <ul>
+                            <li>基本信息</li>
+                            <li>股票动态</li>
+                            <li>公司自理</li>
+                            <li>定期报告</li>
+                            <li>临时公告</li>
+                            <li>研究报告</li>
+                            <li>投资者交流</li>
+                            <li>股息资料</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">人力资源</a>
+                        <ul>
+                            <li>人才理念</li>
+                            <li>员工活动</li>
+                            <li>加入新纶</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid banner" style="margin: 0;padding: 0;">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox ">
+                <div class="item active png1">
+                    <img src="../images/image/a1.jpg" class="center-block" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item png2">
+                    <img src="../images/image/a2.jpg" class="center-block" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+
+                <div class="item png3">
+                    <img src="../images/image/a3.jpg" class="center-block" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item png4">
+                    <img src="../images/image/a4.jpg" class="center-block" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item png5">
+                    <img src="../images/image/a5.jpg" class="center-block" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+            </div>
+       
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</nav>
+   
+
+      <div class="list">
+          <div class="container-fluid">
+              <h3 class="tab-h2">新闻中心</h3>
+              <div class="row">
+                    <li class="col-md-6 col-lg-3 col-xs-12 col-sm-3 info-content">
+                            <a href="http://www.szselen.com/News/ImporList/1139.html">
+                                <span><img src="../images/image/XT1649r381609.jpg" class="img-responsive"></span>
+                                <h4>新纶科技总裁傅博：在新材料领域开启二次创业</h4>
+                                <p>2002年，伴随着深圳电子工业产业的兴起，从事洁净室业务的新纶科技应运而生。2010年，新纶科技登陆中小板，成为室内洁净行业第一家上市公司。与深圳改革创新精神相契合，面对国内消费电子和新能源产业的转型升级带来挑战与机遇，新纶科技从5年前开始从传统的洁净室业务向高精尖的新材料领域转型。</p>
+                            </a>
+                        </li>
+                        <li class="col-md-6 col-lg-3 col-xs-12 col-sm-3 info-content">
+								<a href="http://www.szselen.com/News/ImporList/1137.html">
+									<span><img src="../images/image/XT1649r.jpg" class="img-responsive"></span>
+									<h4>新恒东樱花种植仪式在常州产业园成功举行</h4>
+									<p>9月12日下午，新纶科技全资子公司新恒东薄膜材料（常州）有限公司（以下称“新恒东”），樱花种植仪式在新恒东全新落成的办公楼前成功举行。
+新纶科技总裁兼光电显示事业本部总经理傅博先生出席了本次新恒东樱花种植仪式，仪式由新恒东总经理市东一元先生主持。</p>
+								</a>
+							</li>
+                            <li class="col-md-6 col-lg-3 col-xs-12 col-sm-3 info-content">
+                                    <a href="http://www.szselen.com/News/ImporList/1136.html">
+                                        <span><img src="../images/image/XT164946070861.jpg" class="img-responsive"></span>
+                                        <h4>日本东丽株式会社专务井上治先生一行到访新恒东</h4>
+                                        <p>2018年9月12日上午，日本东丽株式会社专务井上治先生、薄膜事业部长神原丘先生一行到访新纶科技全资子公司新恒东薄膜材料（常州）有限公司（下称新恒东）。公司总裁兼光电显示材料事业本部总经理傅博、新恒东总经理市东一元、常务副总经理林海、副总经理朱健等领导热情接待了日本东丽来访高层，双方就今后光电显示材料事业上的合作方向交换了意见。</p>
+                                    </a>
+                                </li>
+                                <li class="col-md-6 col-lg-3 col-xs-12 col-sm-3 info-content">
+                                        <a href="http://www.szselen.com/News/ImporList/1134.html">
+                                            <span><img src="../images/image/XT1649r381609.jpg" class="img-responsive"></span>
+                                            <h4 class="">韩国LG产业经济研究部申长焕部长一行到访新纶</h4>
+                                            <p class="">8月28日上午，LG产业经济研究院部长申长焕先生、资深顾问成乐焕先生、南孝姃女士等一行到访新纶科技深圳总部，公司副总裁兼新能源事业本部总经理高翔、新复材市场与技术人员等热情接待了韩国LG来访专家，双方就新能源汽车用电池及电池软包技术与未来发展、合作方向交换了意见。</p>
+                                        </a>
+                                    </li>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="more">
+<div class="container-fluid">
+       <p class="indexmore" style="padding-bottom: 30px;"> <a href="">了解更多</a></p>
+    <div class="row">
+            <div class="col col-xs-12 col-lg-4 col-sm-12 ">
+            <div class="wwinproleft">
+                
+                    <div class="wwprolifirst">
+                        <h3><a href="http://www.szselen.com/Develop/index.html">产业发展</a></h3>
+                        <p>历经16年的发展，新纶科技已构筑起以先进材料、材料衍生智造、洁净工程与超净产品三大产业方向，产品与服务涵盖电子功能材料、新能源材料-铝塑复合膜、光电显示材料、高性能纤维、电子材料构件、科创&amp;净化工程、超净产品、智能模塑八大核心业务领域。
+        服务领域：消费类电子、新能源、光电显示、石油精化、生物医药、食品、日化、汽车制造、航空航天、轨道交通等核心行业。</p>
+                        <a class="wwprolifirstmore" href="http://www.szselen.com/Develop/index.html">了解更多</a>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        <div class=" col-xs-12 col-lg-8 col-sm-12">
+             <div class="row">
+                <div class="box  hidden-xs hidden-sm hidden-md">
+								<h4><a href="http://www.szselen.com/Develop/energy/index.html" style="color: #fff;">先进材料</a></h4>
+								<p style="color: #fff;">涵盖电子功能材料、新能源材料-铝塑复合膜、光电显示材料、高性能纤维在内的先进材料产品研发、生产以及精深加工</p>
+								<a class="wwprolifirstmore" href="http://www.szselen.com/Develop/energy/index.html">了解更多</a>	
+                </div>
+                 <div class="col-lg-12 more-top" style="padding: 0;">
+                    <img src="../images/image/123.jpg" class="img-responsive" alt="">
+                 </div>
+                
+                 <div class="col-lg-12 more-under">
+                     <div class="row">
+                         <div class="box1 hidden-md hidden-sm hidden-xs">
+                                
+										<h4><a href="http://www.szselen.com/Develop/clean/index.html" style="color: #fff;">洁净工程与超净产品</a></h4>
+										<p style="color: #fff;">为电子/医药/食品/科创领域提供洁净室净化工程、科创实验室系统工程设计、施工、维护与超净产品研、产、销一体化服务</p>
+										<a class="wwprolifirstmore" href="http://www.szselen.com/Develop/clean/index.html">了解更多</a>
+									
+                         </div>
+                         <div class="col-lg-6 col-sm-6 img1" style="padding:0;">
+                             <img src="../images/image/2016110314375245aa.jpg" class="img-responsive" alt="">
+                         </div>
+                         <div class="box2 hidden-md hidden-xs hidden-sm">
+                                
+										<h4><a href="http://www.szselen.com/Develop/material/index.html" style="color: #fff;">材料衍生智造</a></h4>
+										<p style="color: #fff;">业务包括：为消费类电子提供功能结构件精密模切等产品的电子材料构件和专业服务医药包装/医疗耗材/食品包装/日化包装等领域的智能模塑产品</p>
+										<a class="wwprolifirstmore" href="http://www.szselen.com/Develop/material/index.html">了解更多</a>
+									
+                         </div>
+                         <div class="col-lg-6 col-sm-6 img2" style="padding:0;">
+                             <img src="../images/image/2016110314375245aa.jpg" class="img-responsive" alt="">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+      </div> 
+ 
+
+      <div class="content">    
+          <div class="container-fluid">
+                <h3 class="wwindextit">产品与服务</h3>
+                <p class="wwindextitcopy">成为新材料产业的领跑者及值得信赖的合作伙伴</p>
+              <div class="row">
+                  <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                        <a href="http://gncl.szselen.com/index.html">
+                            <span><img src="../images/image/2016110314375245.jpg"></span>
+                            <h4 style="color:#fff;">电子功能材料</h4>
+                            <p style="color: #fff;" class="p10">电子功能材料解决方案一体化服务，智能、触控行业功能材料解决方案提供商</p>
+                        </a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                        <a href="http://www.szselen.com/product/newenergy/index.html">
+                            <span><img src="../images/image/2016110911233623542039.jpg"></span>
+                            <h4 style="color: #fff;">新能源材料</h4>
+                            <p style="color: #fff;">成为全球产能第一的锂电池用高端铝塑膜供应商</p>
+                        </a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                        <a href="http://www.szselen.com/product/photoelectric/index.html">
+                            <span><img src="../images/image/2016110817454747.jpg"></span>
+                            <h4 style="color: #fff;">光电显示材料</h4>
+                            <p style="color: #fff;" class="p3">以高端显示材料、显示用光学薄膜为业务方向，致力成为国内第一家具备TAC、COP涂布加工能力的专业高端光学薄膜涂布生产商</p>
+                        </a>
+                  </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                            <a href="http://www.szselen.com/product/fiber/index.html">
+                                <span><img src="../images/image/2016110314375245103806.jpg"></span>
+                                <h4 style="color: #fff;">高性能纤维</h4>
+                                <p style="color: #fff;" class="p4">主营高性能纤维的研究生产及深加工，产品包括PBO超级纤维和芳纶1414</p>
+                            </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                            <a href="http://www.szselen.com/product/ElectronicalParts/index.html">
+                                <span><img src="../images/image/2016110314375245183337.jpg"></span>
+                                <h4 style="color: #fff;">电子材料构件</h4>
+                                <p style="color: #fff;" class="p1">以电子功能结构件精密模切为主要业务，服务全球领先的消费类电子品牌厂商，持续为其提供优质的电子产品构件模切辅料与解决方案</p>
+                            </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6">
+                            <a href="http://jhgc.szselen.com/index.html">
+                                <span><img src="../images/image/2016110817454747.png"></span>
+                                <h4 style="color: #fff;">科创&amp;净化工程</h4>
+                                <p style="color: #fff;" class="p2">洁净室行业系统解决方案提供商，电子/医药/食品/科创行业洁净工程设计、施工、维护一体化服务</p>
+                            </a>
+                    </div>
+              </div>
+          </div>
+         
+      </div>
+
+       <div class="technology">
+          <div class="container-fluid">
+                <h3 class="wwindextit" style="color: black;">科技创新</h3>
+          </div>
+       </div>  
+       <div class="ltem">
+           <div class="container-fluid" style="margin: 0;">
+               <div class="row">
+                   <div class=" col-md-6 col-xs-12 col-sm-12 wwimg07" style="margin-bottom: 10px; padding: 0;">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                   
+                                </ol>
+                    
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox ">
+                                    <div class="item active png1">
+                                        <img src="../images/image/2016121219525023.jpg" class="center-block" alt="...">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>
+                                    <div class="item png2">
+                                        <img src="../images/image/2016121219524206.jpg" class="center-block" alt="...">
+                                        <div class="carousel-caption">
+                    
+                                        </div>
+                                    </div>
+                    
+                                    <div class="item png3">
+                                        <img src="../images/image/2016121219524206125001.jpg" class="center-block" alt="...">
+                                        <div class="carousel-caption">
+                    
+                                        </div>
+                                    </div>
+                                    <div class="item png4">
+                                        <img src="../images/image/2016121219525023474365.jpg" class="center-block" alt="...">
+                                        <div class="carousel-caption">
+                    
+                                        </div>
+                                    </div>
+                
+                                    </div>
+                                </div>
+                   </div>
+                   <div class=" col-md-6 col-lg-6 wwinnoright" style="padding: 0;margin-top: 5px;">
+                     <ul>
+                            <li class="col-md-6 swiper-slide swiper-slide-active" style=" margin-right: 10px;">
+									<a href="http://www.szselen.com/techn/research/index.html">
+										<span><img src="../images/image/2016121219511548.jpg" class="img-responsive"></span>
+										<p>高性能新能源材料研发<span class="glyphicon glyphicon-chevron-right" style="color: white;"></span></p>
+									</a>
+								</li>
+                                <li class="col-md-6 swiper-slide swiper-slide-active" style=" margin-right: 10px;">
+                                        <a href="http://www.szselen.com/techn/research/index.html">
+                                            <span><img src="../images/image/2016121219525023.jpg" class="img-responsive"></span>
+                                            <p>高性能纤维材料研发<span class="glyphicon glyphicon-chevron-right" style="color: white;"></span></p>
+                                        </a>
+                                    </li>
+                                    <li class="col-md-6 swiper-slide swiper-slide-active" style=" margin-right: 10px;">
+                                            <a href="http://www.szselen.com/techn/research/index.html">
+                                                <span><img src="../images/image/2016121219512342.jpg" class="img-responsive"></span>
+                                                <p>光电显示功能材料研发<span class=" glyphicon glyphicon-chevron-right" style="color: white;"></span></p>
+                                            </a>
+                                        </li>
+                                        <li class="col-md-6 swiper-slide swiper-slide-active" style="width: 288.5px; margin-right: 10px;">
+                                                <a href="http://www.szselen.com/techn/research/index.html">
+                                                    <span><img src="../images/image/2016121219505666.jpg" class="img-responsive"></span>
+                                                    <p>防静电/洁净室产品材料研发<span class="glyphicon glyphicon-chevron-right" style="color: white;"></span></p>
+                                                </a>
+                                            </li>
+                     </ul>
+                   </div>
+               </div>
+           </div>                        
+       </div>
+       
+
+          <div class="footer">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-8 col-xs-12 bannerltem" style="padding: 0;">
+                            <!-- <div class=" col-md-6 col-xs-12 col-sm-12 wwimg07" style="margin-bottom: 10px;"> -->
+                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                            <!-- Indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                               
+                                            </ol>
+                                
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner" role="listbox ">
+                                                <div class="item active">
+                                                    <img src="../images/image/1.jpg" class="center-block" style="width: 100%" alt="...">
+                                                    <div class="carousel-caption">
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="../images/image/2.jpg" class="center-block" style="width: 100%" alt="...">
+                                                    <div class="carousel-caption">
+                                
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="item">
+                                                    <img src="../images/image/3.jpg" class="center-block" style="width: 100%" alt="...">
+                                                    <div class="carousel-caption">
+                                
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <img src="../images/image/4.jpg" class="center-block" style="width: 100%" alt="...">
+                                                    <div class="carousel-caption">
+                                
+                                                    </div>
+                                                </div>
+                            
+                                                </div>
+                                            </div>
+                               <!-- </div> -->
+                      </div>
+                      <div class="col-md-4 col-xs-12 wwindexhdright" style="background: #005197;">
+                            <h3><a href="javascript:;" style="color: #fff;">员工活动</a></h3>
+                            <ul>
+							
+                                    <li>
+                                        <a href="http://www.szselen.com/resources/Employee/Wonderful/1067.html">2017年德鲁克管理培训优秀学员表彰</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://www.szselen.com/resources/Employee/Wonderful/1034.html">强身享健康  同心创佳绩-记新纶家族第二届趣味运动会顺利召开</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://www.szselen.com/resources/Employee/Wonderful/347.html">同新同行，共创未来！</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://www.szselen.com/resources/Employee/Wonderful/348.html">“回首2016，展望2017”</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://www.szselen.com/resources/Employee/Nfamily/Pitaya/77.html">火龙果家族河源之旅</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="http://www.szselen.com/resources/Employee/Nfamily/SnowP/66.html">雪梨家族增城之旅</a>
+                                    </li>
+                                    
+                                </ul>
+                                <p class="wwindexpage">
+                                        <a class="wwpage" href="http://www.szselen.com/resources/Employee/Nfamily/SnowP/index.html"><span>了解更多</span></a>
+                                    </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="bottom">
+              <div class="container-fluid">
+                  <div class="row bottom-left">
+                                <div class=" col-xs-6 col-sm-3">
+                                        <a href="http://www.szselen.com/About/Conpany/index.html">
+                                            <h3>公司概况</h3>
+                                            <img src="../images/image/wwpic192.jpg">
+                                            <p>新纶科技成立于2002年12月</p>
+                                        </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                        <a href="http://www.szselen.com/About/Honor/Honor.html">
+                                            <h3>荣誉资质</h3>
+                                            <img src="../images/image/wwpic193.jpg">
+                                            <p>国家级高新技术企业</p>
+                                        </a>
+                                </div>
+                              
+                                <!-- Add the extra clearfix for only the required viewport -->
+                                <div class="clearfix visible-xs-block"></div>
+                              
+                                <div class="col-xs-6 col-sm-3">
+                                        <a href="http://www.szselen.com/About/culture/index.html">
+                                            <h3>新纶文化</h3>
+                                            <img src="../images/image/wwpic194.jpg">
+                                            <p>以创新立足全球市场，以智慧经营新纶未来</p>
+                                        </a>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                        <a href="http://www.szselen.com/About/Marketing/headquarters.html">
+                                            <h3>营销网络</h3>
+                                            <img src="../images/image/wwpic195.jpg">
+                                            <p>全面辐射中国珠三角、长三角、京津冀、中西部</p>
+                                        </a>
+                                </div>
+                              
+                  </div>
+              </div>
+          </div>
+         <div class=""></div>
+          <div class="footer-left hidden-sm hidden-xs hidden-md">
+               
+              <ul>
+                  <li id="li1"><span class="glyphicon glyphicon-list-alt"></span>
+                    <div id="box-none"><span>新闻中心</span><span class="glyphicon glyphicon-list-alt"></span></div>
+                  </li>
+                  <li id="li2"><span class="glyphicon glyphicon-cog"></span>
+                    <div id="box3"><span>员工活动</span><span class="glyphicon glyphicon-cog"></span></div>
+                </li>
+                  <li id="li3"><span class="glyphicon glyphicon-user"></span>
+                    <div id="box4"><span>产品与服务</span></div>
+                </li>
+                  <li id="li4"><span class="glyphicon glyphicon-wrench"></span>
+                    <div id="box5"><span>科技创新</span><span class="glyphicon glyphicon-wrench"></span></div>
+                </li>
+                  <li id="li5"><span class="glyphicon glyphicon-education"></span>
+                    <div id="box6"><span>产业发展</span><span class="glyphicon glyphicon-education"></span></div>
+                </li>
+                  <li id="runTop" style="display: none;"><span class="glyphicon glyphicon-menu-up"></span></li>
+              </ul>
+          </div>
+    
+          <ul id="list">
+                <li><span><a href="" style="color: #fff; text-decoration: none;">产业发展</a></span> <button id="btn"></button>
+                    <ul class="ulzi">
+						<li><a href="" style="text-decoration: none; color: #d0d0d1;">产业概述</a></li>
+						<li><a href="" style="text-decoration: none; color: #d0d0d1;">先进材料</a></li>
+						<li>
+                            <a href="" style="text-decoration: none; color: #d0d0d1;">洁净工程与超净产品</a>
+                        </li>
+						<li><a href="" style="text-decoration: none;color: #d0d0d1;">材料衍生智造</a></li>
+						
+					</ul>
+				</li>
+				<li><span><a href="" style="color: #fff; text-decoration: none;">产品与服务</a></span><button id="btn"></button>
+                    <ul class="ulzi">
+						<li><a href="" style="text-decoration: none;color: #d0d0d1;">电子功能材料</a></li>
+						<li><a href="" style="text-decoration: none;color: #d0d0d1;">新能源材料</a></li>
+						<li><a href="" style="text-decoration: none;color: #d0d0d1;">光电显示材料</a></li>
+						<li><a href="" style="text-decoration: none;color: #d0d0d1;">高性能材料</a></li>
+						<li><a href="" style="text-decoration: none; color: #d0d0d1;">科创&净化工程</a></li>
+						<li><a href="" style="text-decoration: none; color: #d0d0d1">超净产品</a></li>
+						<li><a href="" style="text-decoration: none; color: #d0d0d1">电子材料构件</a></li>
+						<li><a href="" style="text-decoration: none; color: #d0d0d1;">智能模塑</a></li>
+					</ul>
+				</li>
+			<li><span><a href="" style="color: #fff; text-decoration: none;">技术创新</a></span><button id="btn"></button>
+                <ul class="ulzi">
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">技术开发中心介绍</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">研究领域</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">科研合作</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">研究成果</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">成品与技术服务</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">中心荣誉</a></li>
+				</ul>
+			</li>
+			<li><span><a href="" style="color: #fff; text-decoration: none;">关于新纶</a></span><button id="btn"></button>
+                <ul class="ulzi">
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">公司概述</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">管理架构</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">发展历程</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">荣誉资质</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">产业基地</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">网络营销</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">企业文化</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">资料下载</a></li>
+				</ul>
+			</li>
+			<li><span><a href="" style="color: #fff; text-decoration: none;">新闻中心</a></span><button id="btn"></button>
+                <ul class="ulzi">
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">公司要闻</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">行业新闻</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">展会与活动</a></li>
+					
+				</ul>
+			</li>
+			<li><span><a href="" style="color: #fff; text-decoration: none;">投资者关系</a></span><button id="btn"></button>
+                <ul class="ulzi">
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">基本信息</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">股票动态</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">公司治理</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">定期报告</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">临时公告</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">研究报告</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">投资者交流</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">股息信息</a></li>
+				</ul>
+			</li>
+			<li><span><a href="" style="color: #fff; text-decoration: none;">人力资源</a></span><button id="btn"></button>
+                <ul class="ulzi">
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">加入新纶</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">员工信息</a></li>
+					<li><a href="" style="text-decoration: none; color: #d0d0d1;">人才理念</a></li>
+					
+				</ul>
+            </li>
+        <p class="p11"><img src="../images/image/xl-code1.png" alt="">
+        </p>
+        <p class="p12"> <img src="../images/image/xl-code2.png" alt=""></p>
+		</ul>
+
+
+          <div class="footerBottom">
+            <div class="commonweb clearfix">
+              <div class="footer-text">
+                <a href="http://www.szselen.com/Contact/headquarters.html">联系我们</a>|<a href="http://www.szselen.com/sitemap.html">网站地图</a>|<a href="http://www.szselen.com/Legal.html">法律声明</a>
+              </div>
+              <p class="footer-right">
+                © 2016 深圳市新纶科技股份有限公司 版权所有  |  粤ICP备16082738号-1 |
+              </p>
+            </div>
+          </div>
+
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script> -->
+</body>
+<script>
+
+    //   $(function(){
+    //       $('#li1').hover(function(){
+    //           $('#box-none').animate({right:"0px"},500)
+    //         //   if(right===185){
+    //         //       $('#box-none').animate.stop();
+    //         //   }
+    //       })
+    //       $('')
+    //   })
+
+
+   
+       var runtop = document.getElementById('runTop') //获取回到顶部按钮的ID
+       var clientHeight = document.documentElement.clientHeight;//获取可视屏幕高度
+       var timer = null;//定义一个计时器
+       var isTop = true;//定义一个布尔值，判断是否到达顶部
+        window.onscroll = function(){ //滚动条滚动事件
+        
+            var osTop = document.documentElement.scrollTop || document.body.scrollTop; //获取滚动条的滚动高度
+            if(osTop >= clientHeight){  //判断滚定的高度是否大于可视高度
+                runtop.style.display = "block";//如果大于可视高度 则回到顶部按钮出现
+            }else{
+                runtop.style.display = "none";//反之 则继续隐藏
+            }
+            if(!isTop){  ////主要用于判断当 点击回到顶部按钮后 滚动条在回滚过程中，若手动滚动滚动条，则清除定时器
+                clearInterval(timer)
+            }
+            isTop = false;
+        }
+        runtop.onclick = function(){    //回到顶部按钮点击事件
+        //设置一个定时器
+        timer = setInterval(function(){
+            //获取滚动条的滚动高度
+            var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+            //用于设置速度差，产生缓动的效果
+            var speed = Math.floor(-osTop / 6);
+            document.documentElement.scrollTop = document.body.scrollTop = osTop + speed;
+            isTop =true;  //用于阻止滚动事件清除定时器
+            if(osTop == 0){
+                clearInterval(timer);
+            }
+        },30);
+    }
+
+
+
+
+    
+    $(".nav-list").children("li").hover(function(){
+			$(".nav-list")
+			.find("ul")
+			.stop()
+			.hide(10)
+			.end()
+			.children("li")
+			.eq($(this).index())
+			.children("ul")
+			.stop()
+			.show(300)
+		},function(){
+            $(this).children('ul').stop().hide(10)
+
+        })
+
+ var obtn =document.querySelectorAll('#btn')
+     var list = document.getElementById('#list')
+     var tul  = document.querySelectorAll('#list>li>ul');
+     var liTotal = document.querySelectorAll("#list>li");
+      var key = true;
+        obtn[0].onclick = function(){
+          if(key){
+              obtn.innerHTML = "";
+            obtn[0].style.backgroundimage = "url(images/icon2.jpg)"
+            tul[0].style.display = "block"
+            // liTotal[0].style.height = "160px";
+              key = false;
+          }else if(key===false){
+             obtn[0].style.backgroundimage = "url(images/icon1.jpg)"
+             tul[0].style.display = "none"
+              key = true;
+          }
+        }
+        obtn[1].onclick = function(){
+          if(key){
+              obtn.innerHTML = "";
+            obtn[1].style.backgroundimage = "url(images/icon2.jpg)"
+            tul[1].style.display = "block"
+              key = false;
+          }else if(key===false){
+             obtn[1].style.backgroundimage = "url(images/icon1.jpg)"
+             tul[1].style.display = "none"
+              key = true;
+          }
+        }
+        obtn[2].onclick = function(){
+          if(key){
+              obtn.innerHTML = "";
+            obtn[2].style.backgroundimage = "url(images/icon2.jpg)"
+            tul[2].style.display = "block"
+              key = false;
+          }else if(key===false){
+             obtn[2].style.backgroundimage = "url(images/icon1.jpg)"
+             tul[2].style.display = "none"
+              key = true;
+          }
+        }
+        obtn[3].onclick = function(){
+          if(key){
+              obtn.innerHTML = "";
+            obtn[3].style.backgroundimage = "url(images/icon2.jpg)"
+            tul[3].style.display = "block"
+              key = false;
+          }else if(key===false){
+             obtn[3].style.backgroundimage = "url(images/icon1.jpg)"
+             tul[3].style.display = "none"
+              key = true;
+          }
+        }
+        obtn[4].onclick = function(){
+          if(key){
+              obtn.innerHTML = "";
+            obtn[4].style.backgroundimage = "url(images/icon2.jpg)"
+            tul[4].style.display="block"
+              key = false;
+          }else if(key===false){
+             obtn[4].style.backgroundimage = "url(images/icon1.jpg)"
+             tul[4].style.display = "none"
+              key = true;
+          }
+        }
+        obtn[5].onclick = function(){
+          if(key){
+              obtn.innerHTML = "";
+            obtn[5].style.backgroundimage = "url(images/icon2.jpg)"
+            tul[5].style.display = "block";
+              key = false;
+          }else if(key===false){
+             obtn[5].style.backgroundimage = "url(images/icon1.jpg)"
+             tul[5].style.display = "none";
+              key = true;
+          }
+        }
+        obtn[6].onclick = function(){
+          if(key){
+              obtn.innerHTML = "";
+            obtn[6].style.backgroundimage = "url(images/icon2.jpg)"
+            tul[6].style.display = "block";
+              key = false;
+          }else if(key===false){
+             obtn[6].style.backgroundimage = "url(images/icon1.jpg)"
+            tul[6].style.display = "none";
+              key = true;
+          }
+        }
+
+
+//  $(function(){
+//         $(window).resize(function(){
+//             // window.onresize = function(){
+//            console.log($(window).width())
+//                if($(window).width()<1024){ 
+               
+//                 $("#list").children("li").hover(function(){
+// 			$("#list")
+// 			.find("ul")
+// 			.stop()
+// 			.hide(300)
+// 			.end()
+// 			.children("li")
+// 			.eq($(this).index())
+// 			.children("ul")
+// 			.stop()
+// 			.show(300)
+// 		},function(){
+//             $(this).children('ul').stop().hide(200)
+
+//             // $(this)
+//             // console.log(this)
+//         })
+//                }else{
+//                    return false;
+//                }
+
+//         //    }
+           
+//         })
+           
+        
+       
+//     })
+
+// // $("#list").nav()
+</script>
+
+</html>
