@@ -271,6 +271,10 @@
     margin: 0;
 }
 
+.tab-content .first p {
+    background: #f2f2f2;
+}
+
 .tab-content .first h2 {
     padding-bottom: 35px;
 }
