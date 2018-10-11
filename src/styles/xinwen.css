@@ -1,0 +1,554 @@
+@charset "utf-8";
+@media (max-width: 767px) {
+    .wwimpor {
+        padding: 20px 0 30px;
+    }
+}
+
+@media (min-width: 767px) {
+    .wwimpor {
+        padding: 50px 0;
+    }
+    .wwimpor dl {
+        margin-bottom: 15px;
+    }
+    .wwimpor dl {
+        background: #f7f7f7;
+    }
+    .wwimpor dl dt {
+        padding-right: 0;
+    }
+    .wwimpor dl dt {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    .wwimpor dl dd {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wwimporword {
+        width: 100%;
+    }
+    .wwimpor .wwnewstime {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    .wwimpor .wwimporword h3 {
+        margin: 0 0 1% 0;
+    }
+    .wwimpor .wwimporword p {
+        -webkit-line-clamp: 2;
+    }
+    .wwimpor .wwimporword span {
+        padding: 1px 17px;
+        margin-top: 9px;
+    }
+    .wwimpor .wwpage {
+        margin-top: 40px;
+    }
+    #profile .wwmedia {
+        padding: 50px 0;
+    }
+    .wwmedia .wwmedialist li .col-sm-8 {
+        padding-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+    }
+    .wwmedia .wwmedialist li span {
+        padding-top: 8px;
+    }
+    #messages .wwshowlist {
+        padding: 50px 0;
+    }
+    .wwshowlistUp h3 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .wwgraybg .wwmedia {
+        padding: 50px 0;
+    }
+    .wwgraybg .wwreview ul {
+        padding-top: 30px;
+    }
+    .wwgraybg .wwmedialist li .col-sm-8 {
+        padding-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+    }
+    .wwreviewtext {
+        line-height: 20px;
+    }
+    .wwgraybg .wwmedialist li span {
+        padding-top: 8px;
+    }
+}
+
+@media (min-width: 991px) {
+    .wwimpor {
+        padding: 50px 0;
+    }
+    .wwimpor dl dt {
+        padding-right: 15px;
+    }
+    .wwimporword {
+        width: 85%;
+    }
+    .wwimpor .wwnewstime {
+        display: block;
+    }
+    .wwimpor .wwimporword h3 {
+        margin: 1% 0 2% 0;
+    }
+    .wwimpor .wwimporword span {
+        margin-top: 12px;
+        padding: 5px 17px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .wwimpor .wwimporword span {
+        margin-top: 25px;
+        padding: 5px 17px;
+    }
+    .wwreviewtext {
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wwimpor {
+        padding: 50px 0;
+    }
+    .wwimporword p {
+        height: 69px;
+    }
+    .wwmedia .wwmedialist li {
+        padding-right: 15px;
+    }
+    .wwgraybg .wwmedialist li {
+        padding-right: 15px;
+    }
+}
+
+.img1 {
+    background: #015198!important;
+}
+
+.img2 {
+    background: #888!important;
+}
+
+ul li {
+    list-style: none;
+}
+
+.nav {
+    background: #f2f2f2;
+    height: 44px;
+    border: none;
+}
+
+.tab-content a {
+    text-decoration: none;
+}
+
+.tab-content p {
+    margin: 0;
+}
+
+.tab-content h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.nav-tabs a {
+    height: 44px;
+    border-radius: 0;
+    float: left;
+    background: #f2f2f2;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 30px;
+    border-right: 1px solid #ccc;
+    display: block;
+}
+
+.nav-tabs a.active {
+    color: #fff;
+}
+
+.nav-tabs a:hover::after {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: #015198;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -10px;
+}
+
+.nav-tabs a:hover {
+    background: #015198;
+}
+
+.nav-tabs a:hover {
+    color: white;
+}
+
+.container-fluid {
+    padding: 0 0 0 30px;
+}
+
+.nav-tabs .active {
+    background: #015198!important;
+}
+
+
+/*第一页*/
+
+.wwimpor dl {
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #333;
+}
+
+.wwimpor dl {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.wwimpor dl dd {
+    color: #666;
+    position: relative;
+}
+
+.wwnewstime {
+    float: left;
+    width: 15%;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
+
+.wwnewstime span {
+    font-size: 60px;
+    line-height: 60px;
+    color: #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.wwnewstime p {
+    padding-top: 12px;
+}
+
+.wwimporword h3 {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin: 3% 0 3% 0;
+    word-break: break-all;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.wwimporword p {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.wwimporword span {
+    color: #1a1a1a;
+    font-size: 13px;
+    border: 1px solid #999;
+    display: inline-block;
+    padding: 5px 17px;
+    margin-top: 15px;
+    background: #fff;
+}
+
+.content2:hover .content2 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content3:hover .content3 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content4:hover .content4 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content5:hover .content5 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content1:hover .content1 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content6:hover .content6 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content7:hover .content7 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content8:hover .content8 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content9:hover .content9 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content10:hover .content10 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.content11:hover .content11 span {
+    background: #015198;
+    color: #fff;
+    border: none;
+}
+
+.wwpage {
+    display: block;
+    padding: 8px 0;
+    background: #015198;
+    -webkit-transition: .2s ease-in-out;
+}
+
+.wwpage span {
+    display: block;
+    width: 31px;
+    margin: 0 auto;
+    height: 31px;
+    background: url(../images/images.yls/wwimg09.png) no-repeat 0 0;
+}
+
+
+/*第二页*/
+
+.wwmedia {
+    padding: 20px 0;
+}
+
+.wwmedialist {
+    margin: 0;
+    padding: 0;
+    padding-top: 2px;
+}
+
+.wwmedialist li {
+    padding: 0;
+    margin: 0;
+    padding-left: 0;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.wwmedialist li .col-sm-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wwmedialist li .col-sm-4 img {
+    display: block;
+    width: 100%;
+}
+
+.wwmedialist li h3 {
+    font-size: 18px;
+    padding-bottom: 9px;
+    line-height: 24px;
+}
+
+.wwmedialist li .col-sm-8 p {
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    height: 46px;
+}
+
+.wwmedialist li span {
+    display: block;
+    padding-top: 7px;
+}
+
+.wwmedialist li span a {
+    color: #015198;
+}
+
+.wwmedialist li .col-sm-8 {
+    margin: 0;
+    padding: 15px 0 0 0;
+    border: 0;
+    background-repeat: no-repeat;
+}
+
+
+/*第三页*/
+
+.wwshowlist {
+    padding: 20px 0;
+}
+
+.wwshowlistUp {
+    padding-top: 22px;
+    color: #666;
+    position: relative;
+    overflow: hidden;
+}
+
+.wwshowtit {
+    color: #1a1a1a;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.owl-stage-outer {
+    margin-top: 22px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+}
+
+a {
+    color: #333;
+}
+
+.owl-item h4 {
+    color: #1a1a1a;
+    font-size: 18px;
+    padding-top: 18px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+}
+
+.wwshowdis {
+    padding: 8px 0 15px 0;
+}
+
+a:hover {
+    color: #333;
+}
+
+.owl-item span {
+    color: #015198;
+}
+
+.wwgraybg {
+    background: #f7f7f7;
+}
+
+.wwgraybg .container {
+    padding: 0;
+}
+
+.wwmedia {
+    padding: 20px 0;
+}
+
+.wwshowtit {
+    color: #1a1a1a;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.wwreview ul {
+    padding-top: 20px;
+}
+
+.wwmedialist li {
+    padding: 0;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.wwmedialist li .col-sm-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wwmedialist li .col-sm-4 img {
+    display: block;
+    width: 100%;
+}
+
+.wwmedialist li .col-sm-8 {
+    padding-top: 15px;
+}
+
+.wwmedialist li h3 {
+    font-size: 18px;
+    padding-bottom: 9px;
+    color: #333;
+    font-weight: normal;
+}
+
+.wwmedialist li .col-sm-8 .wwreviewtext02 p {
+    height: 23px;
+}
+
+.wwmedialist li span {
+    display: block;
+    padding-top: 7px;
+}
